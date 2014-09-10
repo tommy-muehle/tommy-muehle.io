@@ -1,0 +1,9 @@
+atlassian-ide-plugin.xml
+composer.lock
+web/cache/
+.idea/
+app/logs/
+app/cache/
+build/
+bin/
+vendor/

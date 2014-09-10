@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="check-tommy-muehle_de" default="build" basedir=".">
+
+    <!-- Properties -->
+    <property file="${basedir}/build.properties" />
+    <property name="phpcs" value="${basedir}/bin/phpcs" />
+    <property name="phpunit" value="${basedir}/bin/phpunit" />
+    <property name="phpcpd" value="${basedir}/bin/phpcpd" />
+    <!-- end -->
+
+    <target name="build" depends="init, vendors, lint" />
+
+    <target name="init" description="Initialize something">
+
+        <echo>Do composer self-update</echo>
+        <exec dir="${basedir}" executable="${composer}" failonerror="true">
+            <arg value="self-update"/>
+        </exec>
+
+    </target>
+
+    <target name="vendors" description="Make composer update">
+        <echo>Do composer update</echo>
+        <exec dir="${basedir}" executable="${composer}" failonerror="true">
+            <arg value="update"/>
+        </exec>
+    </target>
+
+    <target name="lint" depends="vendors" description="Perform syntax check of sourcecode files">
+        <apply executable="${php}" failonerror="true">
+            <arg value="-l" />
+            <fileset dir="${basedir}/src">
+                <include name="**/*.php" />
+                <modified />
+            </fileset>
+        </apply>
+    </target>
+
+    <target name="phpcpd" description="Find duplicate code using PHPCPD">
+        <exec executable="${phpcpd}">
+            <arg line="--exclude Tests --log-pmd ${basedir}/build/logs/pmd-cpd.xml"/>
+            <arg path="${basedir}/src"/>
+        </exec>
+    </target>
+
+    <target name="phpcs" description="Find coding standard violations using PHP_CodeSniffer creating a log file for the continuous integration server">
+        <exec executable="${phpcs}" failonerror="true">
+            <arg value="--standard=Symfony2"/>
+            <arg value="--extensions=php"/>
+            <arg path="${basedir}/src"/>
+        </exec>
+        <exec executable="${phpcs}" output="/dev/null">
+            <arg value="--report=checkstyle"/>
+            <arg value="--report-file=${basedir}/build/logs/checkstyle.xml"/>
+            <arg value="--standard=Symfony2"/>
+            <arg value="--extensions=php"/>
+            <arg path="${basedir}/src"/>
+        </exec>
+    </target>
+
+</project>

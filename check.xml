@@ -18,6 +18,9 @@
             <arg value="self-update"/>
         </exec>
 
+        <mkdir dir="${basedir}/build" />
+        <mkdir dir="${basedir}/build/logs" />
+
     </target>
 
     <target name="vendors" description="Make composer update">
@@ -39,8 +42,12 @@
     </target>
 
     <target name="phpunit" depends="vendors" description="Execute phpunit tests">
-        <exec dir="${basedir}" executable="${phpunit}" failonerror="true">
-            <arg line="--log-junit ${basedir}/build/logs/phpunit.xml" />
+        <exec dir="${basedir}" executable="${php}" failonerror="true">
+            <arg value="${phpunit}" />
+            <arg value="--verbose" />
+            <arg value="--debug" />
+            <arg value="--log-junit" />
+            <arg value="${basedir}/build/logs/phpunit.xml" />
         </exec>
     </target>
 

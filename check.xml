@@ -13,7 +13,8 @@
     <target name="init" description="Initialize something">
 
         <echo>Do composer self-update</echo>
-        <exec dir="${basedir}" executable="${composer}" failonerror="true">
+        <exec dir="${basedir}" executable="${php}" failonerror="true">
+            <arg value="composer.phar" />
             <arg value="self-update"/>
         </exec>
 
@@ -21,7 +22,8 @@
 
     <target name="vendors" description="Make composer update">
         <echo>Do composer update</echo>
-        <exec dir="${basedir}" executable="${composer}" failonerror="true">
+        <exec dir="${basedir}" executable="${php}" failonerror="true">
+            <arg value="composer.phar" />
             <arg value="update"/>
         </exec>
     </target>

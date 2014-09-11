@@ -8,7 +8,7 @@
     <property name="phpcpd" value="${basedir}/bin/phpcpd" />
     <!-- end -->
 
-    <target name="build" depends="init, vendors, lint" />
+    <target name="build" depends="init, vendors, lint, phpunit, phpcpd" />
 
     <target name="init" description="Initialize something">
 
@@ -38,24 +38,15 @@
         </apply>
     </target>
 
-    <target name="phpcpd" description="Find duplicate code using PHPCPD">
-        <exec executable="${phpcpd}">
-            <arg line="--exclude Tests --log-pmd ${basedir}/build/logs/pmd-cpd.xml"/>
-            <arg path="${basedir}/src"/>
+    <target name="phpunit" depends="vendors" description="Execute phpunit tests">
+        <exec dir="${basedir}" executable="${phpunit}" failonerror="true">
+            <arg line="--log-junit ${basedir}/build/logs/phpunit.xml" />
         </exec>
     </target>
 
-    <target name="phpcs" description="Find coding standard violations using PHP_CodeSniffer creating a log file for the continuous integration server">
-        <exec executable="${phpcs}" failonerror="true">
-            <arg value="--standard=Symfony2"/>
-            <arg value="--extensions=php"/>
-            <arg path="${basedir}/src"/>
-        </exec>
-        <exec executable="${phpcs}" output="/dev/null">
-            <arg value="--report=checkstyle"/>
-            <arg value="--report-file=${basedir}/build/logs/checkstyle.xml"/>
-            <arg value="--standard=Symfony2"/>
-            <arg value="--extensions=php"/>
+    <target name="phpcpd" description="Find duplicate code using PHPCPD">
+        <exec executable="${phpcpd}">
+            <arg line="--exclude Tests --log-pmd ${basedir}/build/logs/pmd-cpd.xml"/>
             <arg path="${basedir}/src"/>
         </exec>
     </target>

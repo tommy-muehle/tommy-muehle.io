@@ -1,0 +1,174 @@
+@media (min-width: 768px) and (max-width: 979px) {
+	/* General
+	 ============================================== */
+	 .row-wrap{width:754px; margin:auto;}
+	 .item-cont{padding:22px 20px 64px 20px;}
+	 .col500{width:405px;}
+	 .col260{width:240px;}
+	 #up{right:20px; bottom:20px;}
+	 /* Profile
+	 ============================================== */
+	 .profile-img{width:136px; height:156px; overflow:hidden; margin-right:20px;}
+	 .profile-img img{width:135px;}
+	 .profile-info{width:245px;}
+	 .profile-data{margin-top:5px;}
+	 .profile-data h4{margin-right:6px;}
+	 /* Resume
+	 ============================================== */
+	 .resume-btns{margin-bottom:17px;}
+	 /* Portfolio
+	 ============================================== */
+	 #Grid .mix{width:210px; height:151px;}
+	 #Grid .mix img{width:100%; height:151px;}
+	 /* Contact
+	 ============================================== */
+	 .form-col{margin-bottom:11px; width:403px;}
+	 .small.form-col{width:233px; float:none;}
+	 .form-btn{margin-top:18px; margin-bottom:2px;}
+	 textarea.form-item{width:395px;}	 .post-comments textarea.form-item{width:442px;}
+	 .form-marg{margin-right:0px;}
+}
+
+/* Landscape phones and down */
+@media (max-width: 767px) {
+	/* General
+	 ============================================== */
+	 .row-wrap{width:420px; margin:auto;}
+	 .row-space{margin:0px;}
+	 .item-cont{padding:22px 20px 64px 20px;}
+	 .col500, .col260{width:100%; float:none;}	 	 #settings{display:none;}
+	 /* Header
+	 ============================================== */
+	 .head-name{font-size:27px; line-height:27px; letter-spacing:-1px; width:auto; margin-top:4px;}
+	 /* Profile
+	 ============================================== */
+	 .profile-img{width:104px; height:119px; overflow:hidden; margin-right:12px; margin-top:5px;}
+	 .profile-img img{width:104px;}
+	 .profile-info{width:220px; letter-spacing:0px;}
+	 .profile-data{margin-top:33px;}
+	 .profile-data li{margin-bottom:12px;}
+	 /* Resume
+	 ============================================== */
+	 .resume-btns{margin-bottom:39px;}
+	 .skill-language .skill-title{width:136px;}
+	 .skill-language .skill-data{float:left;}
+	 /* Portfolio
+	 ============================================== */
+	 #Grid .mix{width:100%; height:242px;}
+	 #Grid .mix img{width:100%; height:242px;}
+	 /* Contact
+	 ============================================== */
+	 #map-canvas{width:100%; height:190px;}
+	 .form-col{margin-bottom:11px; width:333px;}
+	 .small.form-col{width:auto; float:none;}
+	 .form-btn{margin-top:15px; margin-bottom:35px;}
+	 
+	 /* Blog
+	 ============================================== */
+	 .col535, .col230{float:none; width:100%;}
+	 .col230{margin-top:50px;}
+	 .post-tags{float:none;}
+	 .post-share{float:none; margin-top:10px;}
+	 textarea.form-item, .post-comments textarea.form-item{width:327px;}
+}
+
+
+ /* Landscape phones and down */
+@media (max-width: 480px) {
+	 /* General
+	 ============================================== */
+	 .row-wrap{width:300px; margin:auto;}
+	 .row-space{padding-left:0px;}
+	 .item-border{display:none;}
+	 .item-title [class^="icon-"]{display:none;}
+	 .item-cont{padding:22px 19px 64px 19px;}
+	 /* Header
+	 ============================================== */
+	 .head-name{float:none; margin-bottom:21px;}
+	 .head-social{float:none;}
+	 /* Profile
+	 ============================================== */
+	 #profile .profile-img{float:none; width:100%; height:297px;  margin-bottom:21px; margin-right:0px;}
+	 #profile .profile-img img{width:100%; height:297px;}
+	 #profile .profile-info{float:none; width:100%;}
+	 #profile .item-cont{padding-bottom:0px;}
+	 #profile.item{padding-bottom:10px;}
+	
+	 .blog-link{ border-top: none;  bottom: auto; left: auto; position: relative; margin:40px 0px 0px -16px;}
+	 .blog-link .icon{display:none;}
+	 .blog-link .label{left: auto; position: relative; top: auto; transition: all 0s ease 0s; width: auto; display:inline-block;}
+	 .blog-link:hover .label{width:auto; left:auto;}
+	 /* Resume
+	 ============================================== */
+	 .resume-btns{margin-bottom:29px;}
+	 .resume-btns .btn{margin-bottom:10px;}
+	 .skill-language .skill-title{float:left;}
+	 .skill-language .skill-data{float:right;}
+	 /* Portfolio
+	 ============================================== */
+	 #Grid .mix{width:100%; height:188px;}
+	 #Grid .mix img{width:100%; height:188px;}
+	 /*Contact
+	 ============================================== */
+	 #map-canvas{height:148px;}
+	 .form-col{margin-bottom:11px; width:100%;}
+	 .small.form-col{width:100%; float:none;}
+	 textarea.form-item, .form-item, .post-comments textarea.form-item{width:252px;}
+	 textarea.form-item{height:75px;}
+}
+
+
+/* for high resolution display */
+@media only screen and (min--moz-device-pixel-ratio: 2),
+
+only screen and (-o-min-device-pixel-ratio: 2/1),
+
+only screen and (-webkit-min-device-pixel-ratio: 2),
+
+only screen and (min-device-pixel-ratio: 2) {
+
+	.icon-user {background-image: url("../images/user@2x.png"); background-size:20px 18px;}
+	.icon-resume{background-image: url("../images/vcard@2x.png"); background-size:20px 16px;}
+	.icon-portfolio{background-image: url("../images/picture@2x.png"); background-size:20px 19px;}
+	.icon-contact{background-image: url("../images/mail@2x.png"); background-size:18px 15px;}
+	.blog-link .icon, .icon-blog{background-image: url("../images/feather@2x.png"); background-size:14px 20px;}
+	.icon-plus{background-image: url("../images/icon-plus@2x.png"); background-size:12px 12px;}
+	.contact-info .icon{background-image: url("../images/color_theme/icons-contact@2x.png"); background-size:52px 131px;}
+	.skill-box h3{background-image: url("../images/color_theme/icons-plus@2x.png"); background-size:20px 324px;}
+	.head-social a{background-image: url("../images/color_theme/icons-social@2x.png"); background-size:204px 105px;}
+	.entry-data .comments-link{background-image: url("../images/color_theme/icon-comments@2x.png"); background-size:11px 25px;}
+	.post-share a{background-image: url("../images/color_theme/icons-share@2x.png"); background-size:112px 418px;}
+	.item-title .arrow{background-image: url("../images/color_theme/arrows@2x.png"); background-size:43px 96px;}
+	
+	.color_53b7f9 .wp-cont blockquote{ background-image: url("../images/color_theme/quote/53b7f9@2x.png"); background-size:12px 10px;}
+	.color_ff3500 .wp-cont blockquote{ background-image: url("../images/color_theme/quote/ff3500@2x.png"); background-size:12px 10px;}
+	.color_35bb2e .wp-cont blockquote{ background-image: url("../images/color_theme/quote/35bb2e@2x.png"); background-size:12px 10px;}
+	.color_ff6800 .wp-cont blockquote{ background-image: url("../images/color_theme/quote/ff6800@2x.png"); background-size:12px 10px;}
+	.color_197bbf .wp-cont blockquote{ background-image: url("../images/color_theme/quote/197bbf@2x.png"); background-size:12px 10px;}
+	.color_c7df2e .wp-cont blockquote{ background-image: url("../images/color_theme/quote/c7df2e@2x.png"); background-size:12px 10px;}
+	.color_704f36 .wp-cont blockquote{ background-image: url("../images/color_theme/quote/704f36@2x.png"); background-size:12px 10px;}
+	.color_e35039 .wp-cont blockquote{ background-image: url("../images/color_theme/quote/e35039@2x.png"); background-size:12px 10px;}
+	.color_df5085 .wp-cont blockquote{ background-image: url("../images/color_theme/quote/df5085@2x.png"); background-size:12px 10px;}
+	.color_03ae91 .wp-cont blockquote{ background-image: url("../images/color_theme/quote/03ae91@2x.png"); background-size:12px 10px;}
+	.color_ea3302 .wp-cont blockquote{ background-image: url("../images/color_theme/quote/ea3302@2x.png"); background-size:12px 10px;}
+	.color_27ccc0 .wp-cont blockquote{ background-image: url("../images/color_theme/quote/27ccc0@2x.png"); background-size:12px 10px;}
+	.color_976ad8 .wp-cont blockquote{ background-image: url("../images/color_theme/quote/976ad8@2x.png"); background-size:12px 10px;}
+	.color_f9c100 .wp-cont blockquote{ background-image: url("../images/color_theme/quote/f9c100@2x.png"); background-size:12px 10px;}
+	
+	.color_53b7f9 .wp-cont ul li{ background-image: url("../images/color_theme/check/53b7f9@2x.png"); background-size:12px 12px;}
+	.color_ff3500 .wp-cont ul li{ background-image: url("../images/color_theme/check/ff3500@2x.png"); background-size:12px 12px;}
+	.color_35bb2e .wp-cont ul li{ background-image: url("../images/color_theme/check/35bb2e@2x.png"); background-size:12px 12px;}
+	.color_ff6800 .wp-cont ul li{ background-image: url("../images/color_theme/check/ff6800@2x.png"); background-size:12px 12px;}
+	.color_197bbf .wp-cont ul li{ background-image: url("../images/color_theme/check/197bbf@2x.png"); background-size:12px 12px;}
+	.color_c7df2e .wp-cont ul li{ background-image: url("../images/color_theme/check/c7df2e@2x.png"); background-size:12px 12px;}
+	.color_704f36 .wp-cont ul li{ background-image: url("../images/color_theme/check/704f36@2x.png"); background-size:12px 12px;}
+	.color_e35039 .wp-cont ul li{ background-image: url("../images/color_theme/check/e35039@2x.png"); background-size:12px 12px;}
+	.color_df5085 .wp-cont ul li{ background-image: url("../images/color_theme/check/df5085@2x.png"); background-size:12px 12px;}
+	.color_03ae91 .wp-cont ul li{ background-image: url("../images/color_theme/check/03ae91@2x.png"); background-size:12px 12px;}
+	.color_ea3302 .wp-cont ul li{ background-image: url("../images/color_theme/check/ea3302@2x.png"); background-size:12px 12px;}
+	.color_27ccc0 .wp-cont ul li{ background-image: url("../images/color_theme/check/27ccc0@2x.png"); background-size:12px 12px;}
+	.color_976ad8 .wp-cont ul li{ background-image: url("../images/color_theme/check/976ad8@2x.png"); background-size:12px 12px;}
+	.color_f9c100 .wp-cont ul li{ background-image: url("../images/color_theme/check/f9c100@2x.png"); background-size:12px 12px;}
+	
+
+}

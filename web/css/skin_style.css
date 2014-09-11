@@ -1,0 +1,166 @@
+
+/* Light Skin
+============================================================= */
+body.light_skin {color:#4a4a4a;}
+.light_skin .head-social a{background-color:#fafafa; border-top:2px solid #434b51;}
+.light_skin .head-social li:nth-child(even) a{background-color:#ffffff;}
+.light_skin .item-title .arrow{background-position: 0 -25px;}
+.light_skin .item-title:hover .arrow{background-position: 0 0px;}
+.light_skin .item-title.closed .arrow{background-position: 0 -50px;}
+.light_skin .item-title.closed:hover .arrow{background-position: 0 -75px;}
+
+.light_skin .head-social li.tw a{background-position:0px -2px;}
+.light_skin .head-social li.fb a{background-position:-34px -2px;}
+.light_skin .head-social li.lnkd a{background-position:-68px -2px;}
+.light_skin .head-social li.gplus a{background-position:-102px -2px;}
+.light_skin .head-social li.drb a{background-position:-136px -2px;}
+.light_skin .head-social li.inst a{background-position:-170px -2px;}
+
+.light_skin .item-border span, 
+.light_skin #profile-brd > span > span{background-color:#dce3e7}
+.light_skin .item{background:#fff;}
+.light_skin .profile-info h3{color:#000000; }
+.light_skin .blog-link .label{background:#434b51; color:#fff;}
+
+.light_skin .resume-post-title{color:#4a4a4a;}
+.light_skin .resume-post-date{border-color:#E3E3E3;}
+.light_skin .resume-post{border-color:#ebebeb;}
+.light_skin .skill-box h3{border-color:#d0dde5; color:#242a2e;}
+.light_skin .skill-row{border-color:#DFDFDF;}
+.light_skin .skill-title{color:#4f4f4f;}
+.light_skin .skill-data {background:#e6e6e6;}
+.light_skin .skill-title{color:#4F4F4F;}
+.light_skin .skill-percent{color:#848484;}
+
+.light_skin .controls li{border:2px solid #d0dde5; color:#a0aeb6;}
+.light_skin  #contact h3, .light_skin .form h3{color:#000000;}
+.light_skin .form label{color:#4c4c4c;}
+.light_skin .form-item{color: #8e8e8e; background-color: #ffffff; border-color: #d0dde5;}
+.light_skin .contact-info .icon{border-color:#d0dde5;}
+.light_skin  .contact-info .icon-home .icon{background-position: -2px -2px;}
+.light_skin  .contact-info .icon-phone .icon{background-position: -2px -37px;}
+.light_skin  .contact-info .icon-maile .icon{background-position: -2px -72px;}
+.light_skin  .contact-info .icon-world .icon{background-position: -2px -107px;}
+
+.light_skin .post-title, 
+.light_skin .post-title a{color:#000000;}
+.light_skin .post-info{color:#8a8a8a;}
+.light_skin .post-info span, 
+.light_skin .post-info a{color:#000;}
+.light_skin .entry-data, 
+.light_skin .entry-data .comments-link{border-color:#ebebeb;}
+.light_skin .entry-data .month,
+.light_skin .entry-data .day{color:#1c2f40;}
+.light_skin .entry-text{color:#4f4f4f;}
+.light_skin .entry-data .comments-link{background-position:9px 7px;}j
+.light_skin .post-share a{border-color:#d0dde5;}
+.light_skin .entry-box{border-color:#E8EBED;}
+
+.light_skin #sidebar .widget h2{color:#000000;}
+.light_skin #sidebar .widget ul li{border-bottom:1px solid #e8ebed; color:#4c4c4c;}
+.light_skin .tagcloud a, 
+.light_skin .post-tags a{color:#8C9DA8; border:2px solid #d0dde5;}
+.light_skin #pageination li a, 
+.light_skin #pageination li span{border:2px solid #d0dde5; color:#bac4ca;}
+.light_skin #pageination span.current{border:2px solid #434b51; color:#50575d;}
+.light_skin .wp-cont{color:#4f4f4f;}
+
+.light_skin  .mejs-container .mejs-controls{background: #fff; border:1px solid #D1D1D1;}
+.light_skin  .mejs-container .mejs-controls .mejs-time span{color:#666666;}
+.light_skin  .mejs-controls .mejs-play button{background-position:0px 0px;}
+.light_skin  .mejs-controls .mejs-pause button{background-position:-14px 0px;}
+.light_skin  .mejs-controls .mejs-mute button {background-position:-32px 0px;}
+.light_skin  .mejs-controls .mejs-unmute button{background-position:-54px 0px;}
+
+
+ 
+/* Dark Skin
+============================================================= */
+body.dark_skin{color:#a4a4a4;}
+.dark_skin .head-social a{background-color:#161718; border-top:2px solid #000000;}
+.dark_skin .head-social li:nth-child(even) a{background-color:#2f3133;}
+.dark_skin .item-title .arrow{background-position: -22px -25px;}
+.dark_skin .item-title:hover .arrow{background-position: -22px 0px;}
+.dark_skin .item-title.closed .arrow{background-position: -22px -50px;}
+.dark_skin .item-title.closed:hover .arrow{background-position: -22px -75px;}
+.dark_skin .item-title .title{background:#383c3f; color:#ebebec;}
+
+.dark_skin .head-social li.tw a{background-position:0px -37px;}
+.dark_skin  .head-social li.fb a{background-position:-34px -37px;}
+.dark_skin .head-social li.lnkd a{background-position:-68px -37px;}
+.dark_skin .head-social li.gplus a{background-position:-102px -37px;}
+.dark_skin .head-social li.drb a{background-position:-136px -37px;}
+.dark_skin .head-social li.inst a{background-position:-170px -37px;}
+
+.dark_skin .item-border span, 
+.dark_skin #profile-brd > span > span{background-color:#ced5d9;}
+.dark_skin .item{background:#161718;}
+.dark_skin .profile-info h3{color:#f3f3f3;}
+.dark_skin .blog-link .label{background:#434b51; color:#fff;}
+
+.dark_skin .resume-post-title{color:#f3f3f3;}
+.dark_skin .resume-post-date{border-color:#37383a;}
+.dark_skin .resume-post{border-color:#303233;}
+.dark_skin .skill-box h3{border-color:#383e42; color:#c7c7c7;}
+.dark_skin .skill-row{border-color:#4e5357;}
+.dark_skin .skill-title{color:#b6b6b6;}
+.dark_skin .skill-data {background:#4e5357;}
+.dark_skin .skill-title{color:#b6b6b6;}
+.dark_skin .skill-percent{color:#717171;}
+
+.dark_skin .controls li{border:2px solid #434b51; color:#a5b0b7;}
+.dark_skin  #contact h3, .dark_skin .form h3{color:#f3f3f3;}
+.dark_skin .form label{color:#e1e1e1;}
+.dark_skin .form-item{color: #a6a6a6; background-color: #161718; border-color: #606a70;}
+.dark_skin  .contact-info .icon{border-color:#747e84;}
+.dark_skin  .contact-info .icon-home .icon{background-position: -28px -2px;}
+.dark_skin  .contact-info .icon-phone .icon{background-position: -28px -37px;}
+.dark_skin  .contact-info .icon-maile .icon{background-position: -28px -72px;}
+.dark_skin  .contact-info .icon-world .icon{background-position: -28px -107px;}
+
+.dark_skin .post-title, 
+.dark_skin .post-title a{color:#f3f3f3;}
+.dark_skin .post-info{color:#5f5f5f;}
+.dark_skin .post-info span, 
+.dark_skin .post-info a{color:#ffffff;}
+.dark_skin .entry-data, 
+.dark_skin .entry-data .comments-link{border-color:#3a3d40;}
+.dark_skin .entry-data .month,
+.dark_skin .entry-data .day{color:#fafafa;}
+.dark_skin .post-share a{border-color:#5e6569;}
+.dark_skin .entry-box{border-color:#303233;}
+.dark_skin .entry-text{color:#A4A4A4;}
+.dark_skin .entry-data .comments-link{background-position:9px -9px; color:#fff !important;}
+
+.dark_skin  #sidebar .widget h2{color:#f3f3f3;}
+.dark_skin #sidebar .widget ul li{border-bottom:1px solid #303233; color:#a4a4a4;}
+.dark_skin #sidebar .widget ul li a{color:#a4a4a4;}
+.dark_skin .tagcloud a, 
+.dark_skin .post-tags a{color:#8c9da8; border:2px solid #3a3d40;}
+.dark_skin #pageination li a, 
+.dark_skin #pageination li span{border:2px solid #585a5c; color:#7d909b;}
+.dark_skin #pageination span.current{border:2px solid #979ca0; color:#cccccc;}
+.dark_skin .wp-cont,
+.dark_skin .comment-cont{color:#A4A4A4;}
+.dark_skin .comments-link{color:#5F5F5F !important;}
+.dark_skin .wp-cont blockquote, 
+.dark_skin .wp-cont h3,
+.dark_skin .post-tags span,
+.dark_skin .post-share span,
+.dark_skin .comment-head h3{color:#fff;}
+.dark_skin  .post-bottom,
+.dark_skin .comment,
+.dark_skin .post-comments .form{border-color:#303233;}
+
+.dark_skin .btn-reply, 
+.dark_skin .comment-reply-link, 
+.dark_skin #cancel-comment-reply-link{ background-color:#282d31;}
+
+.dark_skin .mejs-container .mejs-controls{background: #343434; border:1px solid #000000;}
+.dark_skin .mejs-container .mejs-controls .mejs-time span{color:#ffffff;}
+.dark_skin .mejs-controls .mejs-play button{background-position:0px -19px;}
+.dark_skin  .mejs-controls .mejs-pause button{background-position:-14px -19px;}
+.dark_skin  .mejs-controls .mejs-mute button {background-position:-32px -19px;}
+.dark_skin  .mejs-controls .mejs-unmute button{background-position:-54px -19px;}
+
+

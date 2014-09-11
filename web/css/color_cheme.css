@@ -1,0 +1,402 @@
+/* Section Border Color
+=========================================================*/
+.bg_f0f2f2 .item-border span, .bg_f0f2f2 #profile-brd > span > span{background:#dce3e7;}
+.bg_f1d2c2 .item-border span, .bg_f1d2c2 #profile-brd > span > span{background:#f5dfd4;}
+.bg_c2f1f1 .item-border span, .bg_c2f1f1 #profile-brd > span > span{background:#d9f7f7;}
+.bg_6fa5d6 .item-border span, .bg_6fa5d6 #profile-brd > span > span{background:#86b4de;}
+.bg_197bbf .item-border span, .bg_197bbf #profile-brd > span > span{background:#2b88c8;}
+.bg_f1efc2 .item-border span, .bg_f1efc2 #profile-brd > span > span{background:#f9f8d9;}
+.bg_e4ddce .item-border span, .bg_e4ddce #profile-brd > span > span{background:#eee7d7;}
+.bg_cc3300 .item-border span, .bg_cc3300 #profile-brd > span > span{background:#ce4518;}
+.bg_e52b50 .item-border span, .bg_e52b50 #profile-brd > span > span{background:#ef4365;}
+.bg_d66fa5 .item-border span, .bg_d66fa5 #profile-brd > span > span{background:#dd7fb0;}
+.bg_ffbe34 .item-border span, .bg_ffbe34 #profile-brd > span > span{background:#fbcd6b;}
+.bg_e36009 .item-border span, .bg_e36009 #profile-brd > span > span{background:#ed7220;}
+.bg_6f4e37 .item-border span, .bg_6f4e37 #profile-brd > span > span{background:#7c5a42;}
+.bg_132c42 .item-border span, .bg_132c42 #profile-brd > span > span{background:#1c3a55;}
+
+/* Background Colors 
+=========================================================*/
+.bg_f0f2f2{background:#f0f2f2;}
+.bg_f1d2c2{background:#f1d2c2;}
+.bg_c2f1f1{background:#c2f1f1;}
+.bg_6fa5d6{background:#6fa5d6;}
+.bg_197bbf{background:#197bbf;}
+.bg_f1efc2{background:#f1efc2;}
+.bg_e4ddce{background:#e4ddce;}
+.bg_cc3300{background:#cc3300;}
+.bg_e52b50{background:#e52b50;}
+.bg_d66fa5{background:#d66fa5;}
+.bg_ffbe34{background:#ffbe34;}
+.bg_e36009{background:#e36009;}
+.bg_6f4e37{background:#6f4e37;}
+.bg_132c42{background:#132c42;}
+
+/* Background Patterns 
+=========================================================*/
+body.bg-pattern1{background:url('../images/bg/bg1.jpg') repeat center center;}
+body.bg-pattern2{background:url('../images/bg/bg2.jpg') repeat center center;}
+body.bg-pattern3{background:url('../images/bg/bg3.jpg') repeat center center;}
+body.bg-pattern4{background:url('../images/bg/bg4.jpg') repeat center center;}
+body.bg-pattern5{background:url('../images/bg/bg5.jpg') repeat center center;}
+body.bg-pattern6{background:url('../images/bg/bg6.jpg') repeat center center;}
+body.bg-pattern7{background:url('../images/bg/bg7.jpg') repeat center center;}
+body.bg-pattern8{background:url('../images/bg/bg8.jpg') repeat center center;}
+body.bg-pattern9{background:url('../images/bg/bg9.jpg') repeat center center;}
+body.bg-pattern10{background:url('../images/bg/bg10.jpg') repeat center center;}
+body.bg-pattern11{background:url('../images/bg/bg11.jpg') repeat center center;}
+body.bg-pattern12{background:url('../images/bg/bg12.jpg') repeat center center;}
+
+/* Color Cheme 
+================================================== */
+
+/* color_53b7f9 */
+.color_53b7f9 .item-title [class^="icon-"],
+.color_53b7f9 .profile-data h4,
+.color_53b7f9 .icon-plus,
+.color_53b7f9 .skill-data .skill-percent-line,
+.color_53b7f9 .btn:hover {background-color:#53b7f9;}
+.color_53b7f9 .mejs-controls .mejs-time-rail .mejs-time-current{background:#53b7f9;}
+.color_53b7f9  .resume-post-body,
+.color_53b7f9 .post-share a:hover{border-color:#53b7f9;}
+.color_53b7f9 .controls li.active{border:2px solid #6ac4ff; color:#6ac4ff;}
+.color_53b7f9 .profile-data h4{border-left:2px solid #5ca8db;}
+.color_53b7f9 .post-title a:hover,
+.color_53b7f9 #sidebar .widget ul li a:hover{color:#53b7f9;}
+
+.color_53b7f9 .skill-box h3{background-position:right 5px;}
+.color_53b7f9 .post-share .share-tw:hover{background-position:-1px -30px;}
+.color_53b7f9 .post-share .share-fb:hover{background-position:-30px -30px;}
+.color_53b7f9 .post-share .share-p:hover{background-position:-59px -30px;}
+.color_53b7f9 .post-share .share-in:hover{background-position:-89px -30px;}
+.color_53b7f9 .wp-cont blockquote{background-image:url('../images/color_theme/quote/53b7f9.png');}
+.color_53b7f9 .wp-cont ul li{background-image:url('../images/color_theme/check/53b7f9.png');}
+.light_skin.color_53b7f9 .skill-language .skill-data{background-image:url(../images/color_theme/skills/53b7f9.png);}
+.dark_skin.color_53b7f9  .skill-language .skill-data{background-image:url(../images/color_theme/skills/53b7f9-dark.png);}
+
+
+/* color_ff3500 */
+.color_ff3500 .item-title [class^="icon-"],
+.color_ff3500 .profile-data h4,
+.color_ff3500 .icon-plus,
+.color_ff3500 .skill-data .skill-percent-line,
+.color_ff3500 .btn:hover{background-color:#ff3500;}
+.color_ff3500 .mejs-controls .mejs-time-rail .mejs-time-current{background:#ff3500;}
+.color_ff3500  .resume-post-body,
+.color_ff3500 .post-share a:hover{border-color:#ff3500;}
+.color_ff3500 .controls li.active{border:2px solid #ff3500; color:#ff3500;}
+.color_ff3500 .profile-data h4{border-left:2px solid #ff3500;}
+.color_ff3500 .post-title a:hover,
+.color_ff3500 #sidebar .widget ul li a:hover{color:#ff3500;}
+
+.color_ff3500 .skill-box h3{background-position:right -19px;}
+.color_ff3500 .post-share .share-tw:hover{background-position:-1px -58px;}
+.color_ff3500 .post-share .share-fb:hover{background-position:-30px -58px;}
+.color_ff3500 .post-share .share-p:hover{background-position:-59px -58px;}
+.color_ff3500 .post-share .share-in:hover{background-position:-89px -58px;}
+.color_ff3500 .wp-cont blockquote{background-image:url('../images/color_theme/quote/FF3500.png');}
+.color_ff3500 .wp-cont ul li{background-image:url('../images/color_theme/check/FF3500.png');}
+.light_skin.color_ff3500 .skill-language .skill-data{background-image:url(../images/color_theme/skills/ff3500.png);}
+.dark_skin.color_ff3500  .skill-language .skill-data{background-image:url(../images/color_theme/skills/ff3500-dark.png);}
+
+
+/* 35bb2e */
+.color_35bb2e .item-title [class^="icon-"],
+.color_35bb2e .profile-data h4,
+.color_35bb2e .icon-plus,
+.color_35bb2e .skill-data .skill-percent-line,
+.color_35bb2e .btn:hover{background-color:#35bb2e;}
+.color_35bb2e .mejs-controls .mejs-time-rail .mejs-time-current{background:#35bb2e;}
+.color_35bb2e  .resume-post-body,
+.color_35bb2e .post-share a:hover{border-color:#35bb2e;}
+.color_35bb2e .controls li.active{border:2px solid #35bb2e; color:#35bb2e;}
+.color_35bb2e .profile-data h4{border-left:2px solid #35bb2e;}
+.color_35bb2e .post-title a:hover,
+.color_35bb2e #sidebar .widget ul li a:hover{color:#35bb2e;}
+
+.color_35bb2e .skill-box h3{background-position:right -43px;}
+.color_35bb2e .post-share .share-tw:hover{background-position:-1px -86px;}
+.color_35bb2e .post-share .share-fb:hover{background-position:-30px -86px;}
+.color_35bb2e .post-share .share-p:hover{background-position:-59px -86px;}
+.color_35bb2e .post-share .share-in:hover{background-position:-89px -86px;}
+.color_35bb2e .wp-cont blockquote{background-image:url('../images/color_theme/quote/35BB2E.png');}
+.color_35bb2e .wp-cont ul li{background-image:url('../images/color_theme/check/35BB2E.png');}
+.light_skin.color_35bb2e .skill-language .skill-data{background-image:url(../images/color_theme/skills/35bb2e.png);}
+.dark_skin.color_35bb2e  .skill-language .skill-data{background-image:url(../images/color_theme/skills/35bb2e-dark.png);}
+
+
+/* ff6800 */
+.color_ff6800 .item-title [class^="icon-"],
+.color_ff6800 .profile-data h4,
+.color_ff6800 .icon-plus,
+.color_ff6800 .skill-data .skill-percent-line,
+.color_ff6800 .btn:hover{background-color:#ff6800;}
+.color_ff6800 .mejs-controls .mejs-time-rail .mejs-time-current{background:#ff6800;}
+.color_ff6800  .resume-post-body,
+.color_ff6800 .post-share a:hover{border-color:#ff6800;}
+.color_ff6800 .controls li.active{border:2px solid #ff6800; color:#ff6800;}
+.color_ff6800 .profile-data h4{border-left:2px solid #ff6800;}
+.color_ff6800 .post-title a:hover,
+.color_ff6800 #sidebar .widget ul li a:hover{color:#ff6800;}
+
+.color_ff6800 .skill-box h3{background-position:right -67px;}
+.color_ff6800 .post-share .share-tw:hover{background-position:-1px -114px;}
+.color_ff6800 .post-share .share-fb:hover{background-position:-30px -114px;}
+.color_ff6800 .post-share .share-p:hover{background-position:-59px -114px;}
+.color_ff6800 .post-share .share-in:hover{background-position:-89px -114px;}
+.color_ff6800 .wp-cont blockquote{background-image:url('../images/color_theme/quote/FF6800.png');}
+.color_ff6800 .wp-cont ul li{background-image:url('../images/color_theme/check/FF6800.png');}
+.light_skin.color_ff6800 .skill-language .skill-data{background-image:url(../images/color_theme/skills/ff6800.png);}
+.dark_skin.color_ff6800  .skill-language .skill-data{background-image:url(../images/color_theme/skills/ff6800-dark.png);}
+
+
+/* 197bbf */
+.color_197bbf .item-title [class^="icon-"],
+.color_197bbf .profile-data h4,
+.color_197bbf .icon-plus,
+.color_197bbf .skill-data .skill-percent-line,
+.color_197bbf .btn:hover{background-color:#197bbf;}
+.color_197bbf .mejs-controls .mejs-time-rail .mejs-time-current{background:#197bbf;}
+.color_197bbf  .resume-post-body,
+.color_197bbf .post-share a:hover{border-color:#197bbf;}
+.color_197bbf .controls li.active{border:2px solid #197bbf; color:#197bbf;}
+.color_197bbf .profile-data h4{border-left:2px solid #197bbf;}
+.color_197bbf .post-title a:hover,
+.color_197bbf #sidebar .widget ul li a:hover{color:#197bbf;}
+
+.color_197bbf .skill-box h3{background-position:right -91px;}
+.color_197bbf .post-share .share-tw:hover{background-position:-1px -142px;}
+.color_197bbf .post-share .share-fb:hover{background-position:-30px -142px;}
+.color_197bbf .post-share .share-p:hover{background-position:-59px -142px;}
+.color_197bbf .post-share .share-in:hover{background-position:-89px -142px;}
+.color_197bbf .wp-cont blockquote{background-image:url('../images/color_theme/quote/197BBF.png');}
+.color_197bbf .wp-cont ul li{background-image:url('../images/color_theme/check/197BBF.png');}
+.light_skin.color_197bbf .skill-language .skill-data{background-image:url(../images/color_theme/skills/197bbf.png);}
+.dark_skin.color_197bbf  .skill-language .skill-data{background-image:url(../images/color_theme/skills/197bbf-dark.png);}
+
+
+/* c7df2e */
+.color_c7df2e .item-title [class^="icon-"],
+.color_c7df2e .profile-data h4,
+.color_c7df2e .icon-plus,
+.color_c7df2e .skill-data .skill-percent-line,
+.color_c7df2e .btn:hover{background-color:#c7df2e;}
+.color_c7df2e .mejs-controls .mejs-time-rail .mejs-time-current{background:#c7df2e;}
+.color_c7df2e  .resume-post-body,
+.color_c7df2e .post-share a:hover{border-color:#c7df2e;}
+.color_c7df2e .controls li.active{border:2px solid #c7df2e; color:#c7df2e;}
+.color_c7df2e .profile-data h4{border-left:2px solid #c7df2e;}
+.color_c7df2e .post-title a:hover,
+.color_c7df2e #sidebar .widget ul li a:hover{color:#c7df2e;}
+
+.color_c7df2e .skill-box h3{background-position:right -115px;}
+.color_c7df2e .post-share .share-tw:hover{background-position:-1px -170px;}
+.color_c7df2e .post-share .share-fb:hover{background-position:-30px -170px;}
+.color_c7df2e .post-share .share-p:hover{background-position:-59px -170px;}
+.color_c7df2e .post-share .share-in:hover{background-position:-89px -170px;}
+.color_c7df2e .wp-cont blockquote{background-image:url('../images/color_theme/quote/C7DF2E.png');}
+.color_c7df2e .wp-cont ul li{background-image:url('../images/color_theme/check/C7DF2E.png');}
+.light_skin.color_c7df2e .skill-language .skill-data{background-image:url(../images/color_theme/skills/c7df2e.png);}
+.dark_skin.color_c7df2e  .skill-language .skill-data{background-image:url(../images/color_theme/skills/c7df2e-dark.png);}
+
+
+/* 704f36 */
+.color_704f36 .item-title [class^="icon-"],
+.color_704f36 .profile-data h4,
+.color_704f36 .icon-plus,
+.color_704f36 .skill-data .skill-percent-line,
+.color_704f36 .btn:hover{background-color:#704f36;}
+.color_704f36 .mejs-controls .mejs-time-rail .mejs-time-current{background:#704f36;}
+.color_704f36  .resume-post-body,
+.color_704f36 .post-share a:hover{border-color:#704f36;}
+.color_704f36 .controls li.active{border:2px solid #704f36; color:#704f36;}
+.color_704f36 .profile-data h4{border-left:2px solid #704f36;}
+.color_704f36 .post-title a:hover,
+.color_704f36 #sidebar .widget ul li a:hover{color:#704f36;}
+
+.color_704f36 .skill-box h3{background-position:right -139px;}
+.color_704f36 .post-share .share-tw:hover{background-position:-1px -198px;}
+.color_704f36 .post-share .share-fb:hover{background-position:-30px -198px;}
+.color_704f36 .post-share .share-p:hover{background-position:-59px -198px;}
+.color_704f36 .post-share .share-in:hover{background-position:-89px -198px;}
+.color_704f36 .wp-cont blockquote{background-image:url('../images/color_theme/quote/704F36.png');}
+.color_704f36 .wp-cont ul li{background-image:url('../images/color_theme/check/704F36.png');}
+.light_skin.color_704f36 .skill-language .skill-data{background-image:url(../images/color_theme/skills/704f36.png);}
+.dark_skin.color_704f36  .skill-language .skill-data{background-image:url(../images/color_theme/skills/704f36-dark.png);}
+
+
+/* e35039 */
+.color_e35039 .item-title [class^="icon-"],
+.color_e35039 .profile-data h4,
+.color_e35039 .icon-plus,
+.color_e35039 .skill-data .skill-percent-line,
+.color_e35039 .btn:hover{background-color:#e35039;}
+.color_e35039 .mejs-controls .mejs-time-rail .mejs-time-current{background:#e35039;}
+.color_e35039  .resume-post-body,
+.color_e35039 .post-share a:hover{border-color:#e35039;}
+.color_e35039 .controls li.active{border:2px solid #e35039; color:#e35039;}
+.color_e35039 .profile-data h4{border-left:2px solid #e35039;}
+.color_e35039 .post-title a:hover,
+.color_e35039 #sidebar .widget ul li a:hover{color:#e35039;}
+
+.color_e35039 .skill-box h3{background-position:right -163px;}
+.color_e35039 .post-share .share-tw:hover{background-position:-1px -226px;}
+.color_e35039 .post-share .share-fb:hover{background-position:-30px -226px;}
+.color_e35039 .post-share .share-p:hover{background-position:-59px -226px;}
+.color_e35039 .post-share .share-in:hover{background-position:-89px -226px;}
+.color_e35039 .wp-cont blockquote{background-image:url('../images/color_theme/quote/E35039.png');}
+.color_e35039 .wp-cont ul li{background-image:url('../images/color_theme/check/E35039.png');}
+.light_skin.color_e35039 .skill-language .skill-data{background-image:url(../images/color_theme/skills/e35039.png);}
+.dark_skin.color_e35039  .skill-language .skill-data{background-image:url(../images/color_theme/skills/e35039-dark.png);}
+
+
+/* df5085 */
+.color_df5085 .item-title [class^="icon-"],
+.color_df5085 .profile-data h4,
+.color_df5085 .icon-plus,
+.color_df5085 .skill-data .skill-percent-line,
+.color_df5085 .btn:hover{background-color:#df5085;}
+.color_df5085 .mejs-controls .mejs-time-rail .mejs-time-current{background:#df5085;}
+.color_df5085  .resume-post-body,
+.color_df5085 .post-share a:hover{border-color:#df5085;}
+.color_df5085 .controls li.active{border:2px solid #df5085; color:#df5085;}
+.color_df5085 .profile-data h4{border-left:2px solid #df5085;}
+.color_df5085 .post-title a:hover,
+.color_df5085 #sidebar .widget ul li a:hover{color:#df5085;}
+
+.color_df5085 .skill-box h3{background-position:right -187px;}
+.color_df5085 .post-share .share-tw:hover{background-position:-1px -254px;}
+.color_df5085 .post-share .share-fb:hover{background-position:-30px -254px;}
+.color_df5085 .post-share .share-p:hover{background-position:-59px -254px;}
+.color_df5085 .post-share .share-in:hover{background-position:-89px -254px;}
+.color_df5085 .wp-cont blockquote{background-image:url('../images/color_theme/quote/DF5085.png');}
+.color_df5085 .wp-cont ul li{background-image:url('../images/color_theme/check/DF5085.png');}
+.light_skin.color_df5085 .skill-language .skill-data{background-image:url(../images/color_theme/skills/df5085.png);}
+.dark_skin.color_df5085  .skill-language .skill-data{background-image:url(../images/color_theme/skills/df5085-dark.png);}
+
+
+/* 03ae91 */
+.color_03ae91 .item-title [class^="icon-"],
+.color_03ae91 .profile-data h4,
+.color_03ae91 .icon-plus,
+.color_03ae91 .skill-data .skill-percent-line,
+.color_03ae91 .btn:hover{background-color:#03ae91;}
+.color_03ae91 .mejs-controls .mejs-time-rail .mejs-time-current{background:#03ae91;}
+.color_03ae91  .resume-post-body,
+.color_03ae91 .post-share a:hover{border-color:#03ae91;}
+.color_03ae91 .controls li.active{border:2px solid #03ae91; color:#03ae91;}
+.color_03ae91 .profile-data h4{border-left:2px solid #03ae91;}
+.color_03ae91 .post-title a:hover,
+.color_03ae91 #sidebar .widget ul li a:hover{color:#03ae91;}
+
+.color_03ae91 .skill-box h3{background-position:right -211px;}
+.color_03ae91 .post-share .share-tw:hover{background-position:-1px -282px;}
+.color_03ae91 .post-share .share-fb:hover{background-position:-30px -282px;}
+.color_03ae91 .post-share .share-p:hover{background-position:-59px -282px;}
+.color_03ae91 .post-share .share-in:hover{background-position:-89px -282px;}
+.color_03ae91 .wp-cont blockquote{background-image:url('../images/color_theme/quote/03AE91.png');}
+.color_03ae91 .wp-cont ul li{background-image:url('../images/color_theme/check/03AE91.png');}
+.light_skin.color_03ae91 .skill-language .skill-data{background-image:url(../images/color_theme/skills/03ae91.png);}
+.dark_skin.color_03ae91  .skill-language .skill-data{background-image:url(../images/color_theme/skills/03ae91-dark.png);}
+
+
+/* ea3302 */
+.color_ea3302 .item-title [class^="icon-"],
+.color_ea3302 .profile-data h4,
+.color_ea3302 .icon-plus,
+.color_ea3302 .skill-data .skill-percent-line,
+.color_ea3302 .btn:hover{background-color:#ea3302;}
+.color_ea3302 .mejs-controls .mejs-time-rail .mejs-time-current{background:#ea3302;}
+.color_ea3302  .resume-post-body,
+.color_ea3302 .post-share a:hover{border-color:#ea3302;}
+.color_ea3302 .controls li.active{border:2px solid #ea3302; color:#ea3302;}
+.color_ea3302 .profile-data h4{border-left:2px solid #ea3302;}
+.color_ea3302 .post-title a:hover,
+.color_ea3302 #sidebar .widget ul li a:hover{color:#ea3302;}
+
+.color_ea3302 .skill-box h3{background-position:right -235px;}
+.color_ea3302 .post-share .share-tw:hover{background-position:-1px -310px;}
+.color_ea3302 .post-share .share-fb:hover{background-position:-30px -310px;}
+.color_ea3302 .post-share .share-p:hover{background-position:-59px -310px;}
+.color_ea3302 .post-share .share-in:hover{background-position:-89px -310px;}
+.color_ea3302 .wp-cont blockquote{background-image:url('../images/color_theme/quote/EA3302.png');}
+.color_ea3302 .wp-cont ul li{background-image:url('../images/color_theme/check/EA3302.png');}
+.light_skin.color_ea3302 .skill-language .skill-data{background-image:url(../images/color_theme/skills/ea3302.png);}
+.dark_skin.color_ea3302  .skill-language .skill-data{background-image:url(../images/color_theme/skills/ea3302-dark.png);}
+
+
+/* 27ccc0 */
+.color_27ccc0 .item-title [class^="icon-"],
+.color_27ccc0 .profile-data h4,
+.color_27ccc0 .icon-plus,
+.color_27ccc0 .skill-data .skill-percent-line,
+.color_27ccc0 .btn:hover{background-color:#27ccc0;}
+.color_27ccc0 .mejs-controls .mejs-time-rail .mejs-time-current{background:#27ccc0;}
+.color_27ccc0  .resume-post-body,
+.color_27ccc0 .post-share a:hover{border-color:#27ccc0;}
+.color_27ccc0 .controls li.active{border:2px solid #27ccc0; color:#27ccc0;}
+.color_27ccc0 .profile-data h4{border-left:2px solid #27ccc0;}
+.color_27ccc0 .post-title a:hover,
+.color_27ccc0 #sidebar .widget ul li a:hover{color:#27ccc0;}
+
+.color_27ccc0 .skill-box h3{background-position:right -259px;}
+.color_27ccc0 .post-share .share-tw:hover{background-position:-1px -338px;}
+.color_27ccc0 .post-share .share-fb:hover{background-position:-30px -338px;}
+.color_27ccc0 .post-share .share-p:hover{background-position:-59px -338px;}
+.color_27ccc0 .post-share .share-in:hover{background-position:-89px -338px;}
+.color_27ccc0 .wp-cont blockquote{background-image:url('../images/color_theme/quote/27CCC0.png');}
+.color_27ccc0 .wp-cont ul li{background-image:url('../images/color_theme/check/27CCC0.png');}
+.light_skin.color_27ccc0 .skill-language .skill-data{background-image:url(../images/color_theme/skills/27ccc0.png);}
+.dark_skin.color_27ccc0  .skill-language .skill-data{background-image:url(../images/color_theme/skills/27ccc0-dark.png);}
+
+
+/* 976ad8 */
+.color_976ad8 .item-title [class^="icon-"],
+.color_976ad8 .profile-data h4,
+.color_976ad8 .icon-plus,
+.color_976ad8 .skill-data .skill-percent-line,
+.color_976ad8 .btn:hover{background-color:#976ad8;}
+.color_976ad8 .mejs-controls .mejs-time-rail .mejs-time-current{background:#976ad8;}
+.color_976ad8  .resume-post-body,
+.color_976ad8 .post-share a:hover{border-color:#976ad8;}
+.color_976ad8 .controls li.active{border:2px solid #976ad8; color:#976ad8;}
+.color_976ad8 .profile-data h4{border-left:2px solid #976ad8;}
+.color_976ad8 .post-title a:hover,
+.color_976ad8 #sidebar .widget ul li a:hover{color:#976ad8;}
+
+.color_976ad8 .skill-box h3{background-position:right -283px;}
+.color_976ad8  .post-share .share-tw:hover{background-position:-1px -366px;}
+.color_976ad8  .post-share .share-fb:hover{background-position:-30px -366px;}
+.color_976ad8  .post-share .share-p:hover{background-position:-59px -366px;}
+.color_976ad8  .post-share .share-in:hover{background-position:-89px -366px;}
+.color_976ad8 .wp-cont blockquote{background-image:url('../images/color_theme/quote/976AD8.png');}
+.color_976ad8 .wp-cont ul li{background-image:url('../images/color_theme/check/976AD8.png');}
+.light_skin.color_976ad8 .skill-language .skill-data{background-image:url(../images/color_theme/skills/976ad8.png);}
+.dark_skin.color_976ad8  .skill-language .skill-data{background-image:url(../images/color_theme/skills/976ad8-dark.png);}
+
+
+/* f9c100 */
+.color_f9c100 .item-title [class^="icon-"],
+.color_f9c100 .profile-data h4,
+.color_f9c100 .icon-plus,
+.color_f9c100 .skill-data .skill-percent-line,
+.color_f9c100 .btn:hover{background-color:#f9c100;}
+.color_f9c100 .mejs-controls .mejs-time-rail .mejs-time-current{background:#f9c100;}
+.color_f9c100  .resume-post-body,
+.color_f9c100 .post-share a:hover{border-color:#f9c100;}
+.color_f9c100 .controls li.active{border:2px solid #f9c100; color:#f9c100;}
+.color_f9c100 .profile-data h4{border-left:2px solid #f9c100;}
+.color_f9c100 .post-title a:hover,
+.color_f9c100 #sidebar .widget ul li a:hover{color:#f9c100;}
+
+.color_f9c100 .skill-box h3{background-position:right -307px;}
+.color_f9c100  .post-share .share-tw:hover{background-position:-1px -394px;}
+.color_f9c100  .post-share .share-fb:hover{background-position:-30px -394px;}
+.color_f9c100  .post-share .share-p:hover{background-position:-59px -394px;}
+.color_f9c100  .post-share .share-in:hover{background-position:-89px -394px;}
+.color_f9c100 .wp-cont blockquote{background-image:url('../images/color_theme/quote/F9C100.png');}
+.color_f9c100 .wp-cont ul li{background-image:url('../images/color_theme/check/F9C100.png');}
+.light_skin.color_f9c100 .skill-language .skill-data{background-image:url(../images/color_theme/skills/f9c100.png);}
+.dark_skin.color_f9c100  .skill-language .skill-data{background-image:url(../images/color_theme/skills/f9c100-dark.png);}
+
+

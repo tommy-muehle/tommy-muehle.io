@@ -1,0 +1,82 @@
+{% extends 'blog/list.html.twig' %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block css %}
+    {{ parent() }}
+    <link href="/css/mono-blue.css" rel="stylesheet"/>
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript" src="/js/highlight.pack.js"></script>
+    <script type="text/javascript">
+        hljs.initHighlightingOnLoad();
+    </script>
+{% endblock %}
+
+{% block content %}
+
+    <section id="profile" class="item">
+        <h2 class="item-title">
+            <a href="{{ path('default.index') }}">
+                <span class="title">my Profile</span>
+                <span class="icon-user"></span>
+            </a>
+        </h2>
+        <div class="item-border"><span></span></div>
+    </section>
+
+    <section id="post" class="item">
+        <h2 class="item-title">
+            <a href="{{ path('blog.list') }}" title="zur Übersicht">
+                <span class="title">my blog Posts</span>
+                <span class="icon-blog"></span>
+            </a>
+        </h2>
+
+        <div class="item-cont clearfix">
+
+            <div class="col535 fl-left">
+                <h2 class="post-title">{{ post.title }}</h2>
+
+                <div class="post-info">
+                    erstellt am {{ post.created|date('d.m.Y H:i') }}
+                    {% if post.categories|length > 1 %}
+                        in den Kategorien
+                    {% else %}
+                        in der Kategorie
+                    {% endif %}
+                    <span>{{ post.categories|join(',') }}</span>
+                </div>
+
+                <div class="post-cont wp-cont">
+                    {{ post.content|raw }}
+                </div>
+
+                <div class="post-bottom clearfix">
+                    {% if post.tags is not empty %}
+                        <div class="post-tags">
+                            <span>Tags:</span>
+                            {% for tag in post.tags %}
+                                <a href="#" title="{{ tag.name }}">{{ tag.name }}</a>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+
+            </div>
+
+            <div class="col230 fl-right">
+                <aside id="sidebar">
+                    {% block sidebar %}
+                        {{ parent() }}
+                    {% endblock %}
+                </aside>
+            </div>
+
+        </div>
+
+        <div class="item-border"><span></span></div>
+    </section>
+
+{% endblock %}

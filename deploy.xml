@@ -31,10 +31,9 @@
     <target name="deploy" depends="vendors" description="Transfer data to target system">
 
         <exec dir="${basedir}" executable="rsync" failonerror="true">
-            <arg value="-o StrictHostKeyChecking=no" />
             <arg line="-avzrd --delete" />
             <arg line="-f'- .git/'" />
-            <arg line="--rsh='ssh -p22' --exclude 'app/cache/*' --exclude 'app/logs/*'" />
+            <arg line="--rsh='ssh -p22 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no' --exclude 'app/cache/*' --exclude 'app/logs/*'" />
             <arg line="app src resources vendor web cli-config.php" />
             <arg value="${remote_user}@${remote_host}:${remote_path}" />
         </exec>

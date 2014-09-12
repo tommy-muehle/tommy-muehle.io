@@ -6,7 +6,8 @@
         "symfony/twig-bridge": "2.5.3",
         "symfony/form": "2.5.3",
         "symfony/yaml": "2.5.3",
-        "doctrine/orm": "2.4.4"
+        "doctrine/orm": "2.4.4",
+        "tm/silex-doctrine-orm-service-provider": "1.0.0"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "1.*",

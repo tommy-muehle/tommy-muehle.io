@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="check-tommy-muehle_de" default="build" basedir=".">
+
+    <!-- Properties -->
+    <property file="${basedir}/build.properties" />
+    <!-- end -->
+
+    <target name="build" depends="init, vendors, deploy" />
+
+    <target name="init" description="Initialize something">
+
+        <echo>Do composer self-update</echo>
+        <exec dir="${basedir}" executable="${php}" failonerror="true">
+            <arg value="composer.phar" />
+            <arg value="self-update"/>
+        </exec>
+
+    </target>
+
+    <target name="vendors" description="Make composer update">
+
+        <echo>Do composer update</echo>
+        <exec dir="${basedir}" executable="${php}" failonerror="true">
+            <arg value="composer.phar" />
+            <arg value="update"/>
+            <arg value="--no-dev" />
+        </exec>
+
+    </target>
+
+    <target name="deploy" depends="vendors" description="Transfer data to target system">
+
+        <exec dir="${basedir}" executable="rsync" failonerror="true">
+            <arg line="-avzrd --delete" />
+            <arg line="-f'- .git/'" />
+            <arg line="--rsh='ssh -p22' --exclude 'app/cache/*' --exclude 'app/logs/*'" />
+            <arg line="app src resources vendor web cli-config.php" />
+            <arg value="${remote_user}@${remote_host}:${remote_path}" />
+        </exec>
+
+        <echo>Update orm scheme</echo>
+        <sshexec port="${remote_port}" host="${remote_host}" keyfile="${remote_key}" passphrase="" username="${remote_user}"
+                 command="${remote_php} ${remote_path}/cli-config.php orm:schema-tool:update --force" />
+
+        <echo>Clear app cache</echo>
+        <sshexec port="${remote_port}" host="${remote_host}" keyfile="${remote_key}" passphrase="" username="${remote_user}"
+                 command="rm -Rf ${remote_path}/app/cache/*" />
+
+    </target>
+
+</project>

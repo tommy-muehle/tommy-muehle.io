@@ -31,6 +31,7 @@
     <target name="deploy" depends="vendors" description="Transfer data to target system">
 
         <exec dir="${basedir}" executable="rsync" failonerror="true">
+            <arg value="-o StrictHostKeyChecking=no" />
             <arg line="-avzrd --delete" />
             <arg line="-f'- .git/'" />
             <arg line="--rsh='ssh -p22' --exclude 'app/cache/*' --exclude 'app/logs/*'" />

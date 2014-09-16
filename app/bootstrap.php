@@ -5,7 +5,13 @@ require_once __DIR__ . '/../vendor/autoload.php';
 $app = new \Silex\Application();
 $app['charset'] = 'utf8';
 $app['environment'] = $app->share(function() {
-    return getenv('APP_ENV');
+    $env = getenv('APP_ENV');
+
+    if (false === $env && $_SERVER['PWD'] == '/var/www/tommy-muehle_de/app') {
+        return 'prod';
+    }
+
+    return 'dev';
 });
 
 if ($app['environment'] === 'prod') {

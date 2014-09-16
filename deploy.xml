@@ -34,16 +34,15 @@
              keyfile="${remote_key}" failonerror="true" />
 
         <scp todir="${remote_user}@${remote_host}:${remote_path}" keyfile="${remote_key}" failonerror="true">
-
-            <fileset dir="${basedir}/app">
-                <exclude name="cache/**" />
-                <exclude name="logs/**" />
+            <fileset dir="${basedir}">
+                <include name="app/**" />
+                <exclude name="app/cache/**" />
+                <exclude name="app/logs/**" />
+                <include name="src/**" />
+                <include name="resources/**" />
+                <include name="vendor/**" />
+                <include name="web/**" />
             </fileset>
-
-            <fileset dir="${basedir}/src" />
-            <fileset dir="${basedir}/resources" />
-            <fileset dir="${basedir}/vendor" />
-            <fileset dir="${basedir}/web" />
         </scp>
 
         <echo>Update orm scheme</echo>

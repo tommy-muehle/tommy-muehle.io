@@ -7,7 +7,7 @@ $app['charset'] = 'utf8';
 $app['environment'] = $app->share(function() {
     $env = getenv('APP_ENV');
 
-    if (false === $env && $_SERVER['PWD'] == '/var/www/tommy-muehle_de/app') {
+    if (false === $env && $_SERVER['PWD'] == '/var/www/tommy-muehle_de') {
         return 'prod';
     }
 

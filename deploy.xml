@@ -30,20 +30,33 @@
 
     <target name="deploy" depends="vendors" description="Transfer data to target system">
 
-        <scp file="${basedir}/cli-config.php" todir="${remote_user}@${remote_host}:${remote_path}"
+        <tar basedir="${basedir}" destfile="release.tar.gz" compression="gzip">
+            <include name="cli-config.php" />
+            <include name="app/**" />
+            <exclude name="app/cache/**" />
+            <exclude name="app/logs/**" />
+            <include name="src/**" />
+            <include name="resources/**" />
+            <include name="vendor/**" />
+            <include name="web/**" />
+        </tar>
+
+        <tstamp>
+            <format property="timestamp" pattern="yyyyMMdd_HHmmss"/>
+        </tstamp>
+        <sshexec port="${remote_port}" host="${remote_host}" keyfile="${remote_key}" passphrase=""
+                 username="${remote_user}" command="mkdir -p ${remote_path}/releases/${timestamp}" />
+
+        <scp file="${basedir}/release.tar.gz" todir="${remote_user}@${remote_host}:${remote_path}"
              keyfile="${remote_key}" failonerror="true" />
 
-        <scp todir="${remote_user}@${remote_host}:${remote_path}" keyfile="${remote_key}" failonerror="true">
-            <fileset dir="${basedir}">
-                <include name="app/**" />
-                <exclude name="app/cache/**" />
-                <exclude name="app/logs/**" />
-                <include name="src/**" />
-                <include name="resources/**" />
-                <include name="vendor/**" />
-                <include name="web/**" />
-            </fileset>
-        </scp>
+        <echo>Untar archive in release folder</echo>
+        <sshexec port="${remote_port}" host="${remote_host}" keyfile="${remote_key}" passphrase="" username="${remote_user}"
+                 command="tar -xzf ${remote_path}/releases/${timestamp}/release.tar.gz -C ${remote_path}/releases/${timestamp}"/>
+
+        <echo>Set symlink to new release</echo>
+        <sshexec port="${remote_port}" host="${remote_host}" keyfile="${remote_key}" passphrase="" username="${remote_user}"
+                 command="ln -snf ${remote_path}/releases/${timestamp} ${remote_path}/current"/>
 
         <echo>Update orm scheme</echo>
         <sshexec port="${remote_port}" host="${remote_host}" keyfile="${remote_key}" passphrase="" username="${remote_user}"
@@ -58,6 +71,11 @@
         <echo>Clear app cache</echo>
         <sshexec port="${remote_port}" host="${remote_host}" keyfile="${remote_key}" passphrase="" username="${remote_user}"
                  command="rm -Rf ${remote_path}/app/cache/*" />
+
+        <sshexec port="${remote_port}" host="${remote_host}" keyfile="${remote_key}" passphrase="" username="${remote_user}"
+                 command="rm -f ${remote_path}/releases/${timestamp}/release.tar.gz" />
+
+        <delete file="${basedir}/release.tar.gz" />
 
     </target>
 

@@ -7,14 +7,18 @@ $app['charset'] = 'utf8';
 $app['environment'] = $app->share(function() {
     $env = getenv('APP_ENV');
 
-    if (false === $env && $_SERVER['PWD'] == '/var/www/tommy-muehle_de') {
-        return 'prod';
-    } else if (false !== $env) {
+    if ($env !== false) {
         return $env;
+    }
+
+    if (false === $env && $_SERVER['USER'] == 'web') {
+        return 'prod';
     }
 
     return 'dev';
 });
+
+var_dump($app['environment']);
 
 if ($app['environment'] === 'prod') {
     $app['debug']  = false;

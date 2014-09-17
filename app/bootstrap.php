@@ -18,8 +18,6 @@ $app['environment'] = $app->share(function() {
     return 'dev';
 });
 
-var_dump($app['environment']);
-
 if ($app['environment'] === 'prod') {
     $app['debug']  = false;
     $app['config'] = array('file' => __DIR__ . '/config/parameters_prod.yml');

@@ -7,6 +7,7 @@ VALUES
 	(1, 'Vagrant', 'vagrant', 'Vagrant ist eine Software zur Erstellung und Verwaltung von virtuellen Maschinen.'),
 	(2, 'PHP', 'php', 'PHP ist eine Skriptsprache, die hauptsächlich zur Erstellung dynamischer Webseiten oder Webanwendungen verwendet wird.'),
 	(3, 'Jenkins', 'jenkins', 'Jenkins ist ein erweiterbares, webbasiertes System zur kontinuierlichen Integration.'),
-	(4, 'Puppet', 'puppet', '');
+	(4, 'Puppet', 'puppet', 'Puppet ist ein Werkzeug zur automatisierten Konfiguration von Systemen.'),
+	(5, 'Composer', 'composer', 'Composer ist ein Paketmanager für PHP-Applikationen.');
 
 SET FOREIGN_KEY_CHECKS=1;

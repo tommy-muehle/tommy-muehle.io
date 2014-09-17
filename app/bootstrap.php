@@ -9,6 +9,8 @@ $app['environment'] = $app->share(function() {
 
     if (false === $env && $_SERVER['PWD'] == '/var/www/tommy-muehle_de') {
         return 'prod';
+    } else if (false !== $env) {
+        return $env;
     }
 
     return 'dev';

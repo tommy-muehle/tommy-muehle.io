@@ -64,9 +64,9 @@
 
         <echo>Load fixtures</echo>
         <sshexec port="${remote_port}" host="${remote_host}" keyfile="${remote_key}" passphrase="" username="${remote_user}"
-                 command="${remote_php} ${remote_path}/cli-config.php dbal:import ${basedir}/resources/fixtures/categories.sql" />
+                 command="${remote_php} ${remote_path}/cli-config.php dbal:import ${remote_path}/resources/fixtures/categories.sql" />
         <sshexec port="${remote_port}" host="${remote_host}" keyfile="${remote_key}" passphrase="" username="${remote_user}"
-                 command="${remote_php} ${remote_path}/cli-config.php dbal:import ${basedir}/resources/fixtures/tags.sql" />
+                 command="${remote_php} ${remote_path}/cli-config.php dbal:import ${remote_path}/resources/fixtures/tags.sql" />
 
         <echo>Clear app cache</echo>
         <sshexec port="${remote_port}" host="${remote_host}" keyfile="${remote_key}" passphrase="" username="${remote_user}"

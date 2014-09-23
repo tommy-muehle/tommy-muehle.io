@@ -19,7 +19,7 @@
     <section id="profile" class="item">
         <h2 class="item-title">
             <a href="{{ path('default.index') }}">
-                <span class="title">my Profile</span>
+                <span class="title">Mein Profil</span>
                 <span class="icon-user"></span>
             </a>
         </h2>
@@ -29,7 +29,7 @@
     <section id="post" class="item">
         <h2 class="item-title">
             <a href="{{ path('blog.list') }}" title="zur Übersicht">
-                <span class="title">my blog Posts</span>
+                <span class="title">Blog</span>
                 <span class="icon-blog"></span>
             </a>
         </h2>
@@ -50,7 +50,7 @@
                 </div>
 
                 <div class="post-cont wp-cont">
-                    {{ post.content|raw }}
+                    {% include 'blog/posts/' ~ post.contentFile only %}
                 </div>
 
                 <div class="post-bottom clearfix">

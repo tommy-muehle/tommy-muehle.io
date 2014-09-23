@@ -7,7 +7,7 @@
     <section id="profile" class="item">
         <h2 class="item-title">
             <a href="{{ path('default.index') }}">
-                <span class="title">my Profile</span>
+                <span class="title">Mein Profil</span>
                 <span class="icon-user"></span>
             </a>
         </h2>
@@ -16,18 +16,24 @@
 
     <section id="blog" class="item">
         <h2 class="item-title">
-            <span class="title">my blog Posts</span>
-            <span class="icon-blog"></span>
+            <a href="{{ path('blog.list') }}" title="zur Übersicht">
+                <span class="title">BLOG</span>
+                <span class="icon-blog"></span>
+            </a>
         </h2>
 
         <div class="item-cont clearfix">
             <div class="col535 fl-left">
 
-                {% for post in posts %}
-                    <article class="entry-box">
-                        {% include 'blog/_listItem.html.twig' %}
-                    </article>
-                {% endfor %}
+                {% if posts|length == 0 %}
+                    <p>Leider keine Artikel vorhanden.</p>
+                {% else %}
+                    {% for post in posts %}
+                        <article class="entry-box">
+                            {% include 'blog/_listItem.html.twig' %}
+                        </article>
+                    {% endfor %}
+                {% endif %}
 
             </div>
 

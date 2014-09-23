@@ -36,16 +36,23 @@ class BlogController extends BaseController implements ControllerProviderInterfa
         return $this->render($app, 'blog/list.html.twig', $variables);
     }
 
+    /**
+     * @param Application $app
+     *
+     * @return string
+     */
     public function rssAction(Application $app)
     {
         /* @var $em \Doctrine\ORM\EntityManager */
         $em = $app['orm.em'];
 
+        $posts = $em->getRepository('TM\Entity\Post')->findBy(
+            array('isPublished' => true),
+            array('created' => 'desc')
+        );
+
         $variables = array(
-            'posts' => $em->getRepository('TM\Entity\Post')->findBy(
-                    array('isPublished' => true),
-                    array('created' => 'desc')
-                )
+            'posts' => $posts
         );
 
         return $this->render($app, 'blog/list.rss.twig', $variables);
@@ -71,7 +78,7 @@ class BlogController extends BaseController implements ControllerProviderInterfa
         ));
 
         if (!$post instanceof Post) {
-            $this->redirect($app, 'default.notFound');
+            return $this->redirect($app, 'default.notFound');
         }
 
         return $this->render($app, 'blog/show.html.twig', array('post' => $post));

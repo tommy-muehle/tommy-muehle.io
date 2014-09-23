@@ -1,0 +1,30 @@
+{% extends 'default.html.twig' %}
+
+{% block title %}Leider nicht gefunden{% endblock %}
+
+{% block content %}
+
+    <section id="profile" class="item">
+        <h2 class="item-title">
+            <a href="{{ path('default.index') }}">
+                <span class="title">Mein Profil</span>
+                <span class="icon-user"></span>
+            </a>
+        </h2>
+        <div class="item-border"><span></span></div>
+    </section>
+
+    <section id="imprint" class="item">
+
+        <h2 class="item-title">
+                <span class="title">404</span>
+                <span class="icon-portfolio"></span>
+        </h2>
+
+        <div class="item-cont clearfix">
+            <h3>Leider nicht gefunden</h3>
+            <p>Die angefragte Seite konnte leider nicht gefunden werden.</p>
+        </div>
+    </section>
+
+{% endblock %}

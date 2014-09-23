@@ -40,9 +40,9 @@ class Post extends Base
     /**
      * @var string
      *
-     * @Column(type="text")
+     * @Column(name="content_file", type="string")
      */
-    protected $content;
+    protected $contentFile;
 
     /**
      * @var \Doctrine\Common\Collections\ArrayCollection
@@ -119,19 +119,19 @@ class Post extends Base
     }
 
     /**
-     * @param string $content
+     * @param string $file
      */
-    public function setContent($content)
+    public function setContentFile($file)
     {
-        $this->content = $content;
+        $this->contentFile = $file;
     }
 
     /**
      * @return string
      */
-    public function getContent()
+    public function getContentFile()
     {
-        return $this->content;
+        return $this->contentFile;
     }
 
     /**

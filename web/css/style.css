@@ -274,11 +274,9 @@ a{cursor:pointer;}
     background-repeat:no-repeat;} 
 
 .head-social li.tw a:hover{background-position:0px -72px; border-color:#54aee1;}
-.head-social li.fb a:hover{background-position:-34px -72px; border-color:#4772af;}
-.head-social li.lnkd a:hover{background-position:-68px -72px; border-color:#56b8cd;}
-.head-social li.gplus a:hover{background-position:-102px -72px; border-color:#e43a3a;}
-.head-social li.drb a:hover{background-position:-136px -72px; border-color:#bd64be;}
-.head-social li.inst a:hover{background-position:-170px -72px; border-color:#406f95;}
+.head-social li.github a:hover{background-position:-34px -72px; border-color:#54aee1;}
+.head-social li.lnkd a:hover{background-position:-68px -72px; border-color:#54aee1;}
+.head-social li.xing a:hover{background-position:-102px -72px; border-color:#54aee1;}
 
 /* item */
 .item{padding:25px 0px; margin-bottom:3px; position:relative;}
@@ -593,6 +591,7 @@ a{cursor:pointer;}
 #contact .form-btn{padding:2px 0px; margin-top:20px;}
 
 #contact h3,
+#imprint h3,
 
 .form h3{font:15px/15px 'Patua One', cursive;  margin-bottom:20px; text-transform:uppercase;}
 

@@ -10,9 +10,9 @@ body.light_skin {color:#4a4a4a;}
 .light_skin .item-title.closed:hover .arrow{background-position: 0 -75px;}
 
 .light_skin .head-social li.tw a{background-position:0px -2px;}
-.light_skin .head-social li.fb a{background-position:-34px -2px;}
+.light_skin .head-social li.github a{background-position:-34px -2px;}
 .light_skin .head-social li.lnkd a{background-position:-68px -2px;}
-.light_skin .head-social li.gplus a{background-position:-102px -2px;}
+.light_skin .head-social li.xing a{background-position:-102px -2px;}
 .light_skin .head-social li.drb a{background-position:-136px -2px;}
 .light_skin .head-social li.inst a{background-position:-170px -2px;}
 
@@ -86,9 +86,9 @@ body.dark_skin{color:#a4a4a4;}
 .dark_skin .item-title .title{background:#383c3f; color:#ebebec;}
 
 .dark_skin .head-social li.tw a{background-position:0px -37px;}
-.dark_skin  .head-social li.fb a{background-position:-34px -37px;}
+.dark_skin  .head-social li.github a{background-position:-34px -37px;}
 .dark_skin .head-social li.lnkd a{background-position:-68px -37px;}
-.dark_skin .head-social li.gplus a{background-position:-102px -37px;}
+.dark_skin .head-social li.xing a{background-position:-102px -37px;}
 .dark_skin .head-social li.drb a{background-position:-136px -37px;}
 .dark_skin .head-social li.inst a{background-position:-170px -37px;}
 

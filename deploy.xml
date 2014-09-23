@@ -67,6 +67,8 @@
                  command="${remote_php} ${remote_path}/cli-config.php dbal:import ${remote_path}/resources/fixtures/categories.sql" />
         <sshexec port="${remote_port}" host="${remote_host}" keyfile="${remote_key}" passphrase="" username="${remote_user}"
                  command="${remote_php} ${remote_path}/cli-config.php dbal:import ${remote_path}/resources/fixtures/tags.sql" />
+        <sshexec port="${remote_port}" host="${remote_host}" keyfile="${remote_key}" passphrase="" username="${remote_user}"
+                 command="${remote_php} ${remote_path}/cli-config.php dbal:import ${remote_path}/resources/fixtures/posts.sql" />
 
         <echo>Clear app cache</echo>
         <sshexec port="${remote_port}" host="${remote_host}" keyfile="${remote_key}" passphrase="" username="${remote_user}"

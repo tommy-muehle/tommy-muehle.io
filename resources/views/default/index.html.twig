@@ -5,21 +5,18 @@
 {% block content %}
     <section id="profile" class="item noprint">
         <h2 class="item-title">
-            <span class="title">my Profile</span>
+            <span class="title">Mein Profil</span>
             <span class="icon-user"></span>
         </h2>
 
         <div class="item-cont clearfix">
             <div class="hidden">
                 <div class="col500 clearfix fl-left">
-                    <div class="profile-img"><img src="images/user_images/profile-img.jpg" alt="" /></div>
+                    <div class="profile-img"><img src="/images/tommy.jpg" alt="Bild von mir" /></div>
                     <div class="profile-info">
-                        <h3>I'm England Developer and Business Lady :)</h3>
-                        <p>Im Graphic designer and occasional author who specialises in designing
-                            brand identities. People hire me because I help make their businesses
-                            more profitable.</p>
-                        <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                            doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                        <h3>Hallo, ich bin Tommy.</h3>
+                        <p>Ich bin Entwickler, Ehemann, ein wenig Nerd mit einer Vorliebe für Technik,
+                           Fussball, Filme und gutes Essen.</p>
                     </div>
                 </div>
 
@@ -32,83 +29,72 @@
                     </ul>
                 </div>
             </div>
-            <a class="blog-link" href="{{ path('blog.list') }}">
+            <a class="blog-link" href="{{ path('blog.list') }}" title="zum Blog">
                 <span class="icon"></span>
-                <span class="label">MY BLOG</span>
+                <span class="label">BLOG</span>
             </a>
         </div>
         <div id="profile-brd" class="item-border"><span><span></span></span></div>
     </section><!-- /#profile -->
 
     <section id="resume" class="item">
-        <h2 class="item-title toggle noprint closed"><span class="title">resume</span> <span class="icon-resume"></span><span class="arrow"></span></h2>
+        <h2 class="item-title toggle noprint closed">
+            <span class="title">Über mich</span>
+            <span class="icon-resume"></span>
+            <span class="arrow"></span>
+        </h2>
 
         <div class="item-cont clearfix">
             <div class="col500 fl-left">
-                <div class="resume-category">
-                    <h3 class="resume-category-title clearfix">EDUCATION <span class="icon-plus"></span></h3>
-
-                    <div class="resume-post">
-                        <div class="resume-post-body">
-                            <div class="resume-post-date">2006 - 2007</div>
-                            <h4 class="resume-post-title">Viena Programming School</h4>
-                            <h5 class="resume-post-subtitle">PHP Computer School</h5>
-                            <div class="resume-post-cont">
-                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudantium, totam rem aperiam, eaque ipsa quae.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="resume-post">
-                        <div class="resume-post-body">
-                            <div class="resume-post-date">2007 - 2011</div>
-                            <h4 class="resume-post-title">Web Design University</h4>
-                            <h5 class="resume-post-subtitle">MTI University</h5>
-                            <div class="resume-post-cont">
-                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudantium, totam rem aperiam, eaque ipsa quae.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="resume-category">
-                    <h3 class="resume-category-title clearfix">Professional experience <span class="icon-plus"></span></h3>
+                    <h3 class="resume-category-title clearfix">Arbeitsleben<span class="icon-plus"></span></h3>
 
                     <div class="resume-post">
                         <div class="resume-post-body">
                             <div class="resume-post-date">2010 - bis heute</div>
                             <h4 class="resume-post-title">Senior Developer</h4>
                             <h5 class="resume-post-subtitle">move:elevator GmbH</h5>
-                            <div class="resume-post-cont">
-                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudantium, totam rem aperiam, eaque ipsa quae.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="resume-post">
-                        <div class="resume-post-body">
-                            <div class="resume-post-date">2008 - 2010</div>
-                            <h4 class="resume-post-title">Developer</h4>
-                            <h5 class="resume-post-subtitle">Colosseum Competence GmbH & Co. KG</h5>
-                            <div class="resume-post-cont">
-                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudantium, totam rem aperiam, eaque ipsa quae.</p>
-                            </div>
                         </div>
                     </div>
 
                     <div class="resume-post">
                         <div class="resume-post-body">
                             <div class="resume-post-date">2009 - 2010</div>
-                            <h4 class="resume-post-title">Senior Web Designer</h4>
-                            <h5 class="resume-post-subtitle">Company Name</h5>
-                            <div class="resume-post-cont">
-                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudantium, totam rem aperiam, eaque ipsa quae.</p>
-                            </div>
+                            <h4 class="resume-post-title">Developer</h4>
+                            <h5 class="resume-post-subtitle">Colosseum Competence GmbH & Co. KG</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-category">
+                    <h3 class="resume-category-title clearfix">Ausbildung <span class="icon-plus"></span></h3>
+
+                    <div class="resume-post">
+                        <div class="resume-post-body">
+                            <div class="resume-post-date">2008 - 2009</div>
+                            <h4 class="resume-post-title">Fachinformatiker für Anwendungsentwicklung</h4>
+                            <h5 class="resume-post-subtitle">AWV Dresden GmbH</h5>
+                        </div>
+                    </div>
+
+                    <div class="resume-post">
+                        <div class="resume-post-body">
+                            <div class="resume-post-date">2006 - 2008</div>
+                            <h4 class="resume-post-title">techn. Assistent für Informatik</h4>
+                            <h5 class="resume-post-subtitle">AIK gGmbH Dresden</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-category">
+                    <h3 class="resume-category-title clearfix">Schulbildung <span class="icon-plus"></span></h3>
+
+                    <div class="resume-post">
+                        <div class="resume-post-body">
+                            <div class="resume-post-date">2003 - 2005</div>
+                            <h4 class="resume-post-title">Fachhochschulreife</h4>
+                            <h5 class="resume-post-subtitle">BSZ Freital</h5>
                         </div>
                     </div>
                 </div>
@@ -131,16 +117,16 @@
                             <div class="skill-row">
                                 <h4 class="skill-title">Puppet</h4>
                                 <div class="skill-data">
-                                    <span class="skill-percent-line" data-width="70"></span>
-                                    <span class="skill-percent">70%</span>
+                                    <span class="skill-percent-line" data-width="80"></span>
+                                    <span class="skill-percent">80%</span>
                                 </div>
                             </div>
 
                             <div class="skill-row">
                                 <h4 class="skill-title">Javascript</h4>
                                 <div class="skill-data">
-                                    <span class="skill-percent-line" data-width="85"></span>
-                                    <span class="skill-percent">85%</span>
+                                    <span class="skill-percent-line" data-width="60"></span>
+                                    <span class="skill-percent">60%</span>
                                 </div>
                             </div>
 
@@ -169,8 +155,8 @@
                             <div class="skill-row">
                                 <h4 class="skill-title">Symfony2</h4>
                                 <div class="skill-data">
-                                    <span class="skill-percent-line" data-width="80"></span>
-                                    <span class="skill-percent">80%</span>
+                                    <span class="skill-percent-line" data-width="90"></span>
+                                    <span class="skill-percent">90%</span>
                                 </div>
                             </div>
 
@@ -199,14 +185,14 @@
 
                             <aside class="skill-language">
                                 <div class="skill-row clearfix">
-                                    <h4 class="skill-title clearfix"><img src="images/gr.png" alt="german" /><span>GERMAN</span></h4>
+                                    <h4 class="skill-title clearfix"><img src="/images/gr.png" alt="german" /><span>GERMAN</span></h4>
                                     <div class="skill-data skill6"></div>
                                 </div>
                             </aside>
 
                             <aside class="skill-language">
                                 <div class="skill-row clearfix">
-                                    <h4 class="skill-title clearfix"><img src="images/en.png" alt="english" /><span>ENGLISH</span></h4>
+                                    <h4 class="skill-title clearfix"><img src="/images/en.png" alt="english" /><span>ENGLISH</span></h4>
                                     <div class="skill-data skill3"></div>
                                 </div>
                             </aside>
@@ -220,28 +206,12 @@
     </section><!-- /#resume -->
 
     <section id="contact" class="item noprint">
-        <h2 class="item-title toggle closed"><span class="title">Contact info</span> <span class="icon-contact"></span><span class="arrow"></span></h2>
-
-        <div class="item-cont">
-
-            <div class="clearfix">
-                <h3>Contact info</h3>
-                <ul class="contact-info">
-                    <li class="icon-home clearfix"><span class="icon"></span>
-                        <span class="text">England, London, Street 27, UK</span>
-                    </li>
-                    <li class="icon-phone clearfix"><span class="icon"></span>
-                        <span class="text">+1 256 254 84 56</span>
-                    </li>
-                    <li class="icon-maile clearfix"><span class="icon"></span>
-                        <span class="text">amandasmith@mail.com</span>
-                    </li>
-                    <li class="icon-world clearfix"><span class="icon"></span>
-                        <span class="text">http://sitename.com</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <a href="{{ path('default.imprint') }}">
+            <h2 class="item-title">
+                <span class="title">Kontakt</span>
+                <span class="icon-contact"></span>
+            </h2>
+        </a>
         <div class="item-border"><span></span></div>
     </section><!-- /#contact -->
 

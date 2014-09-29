@@ -135,7 +135,6 @@ only screen and (min-device-pixel-ratio: 2) {
 	.icon-plus{background-image: url("../images/icon-plus@2x.png"); background-size:12px 12px;}
 	.contact-info .icon{background-image: url("../images/color_theme/icons-contact@2x.png"); background-size:52px 131px;}
 	.skill-box h3{background-image: url("../images/color_theme/icons-plus@2x.png"); background-size:20px 324px;}
-	.head-social a{background-image: url("../images/color_theme/icons-social@2x.png"); background-size:204px 105px;}
 	.entry-data .comments-link{background-image: url("../images/color_theme/icon-comments@2x.png"); background-size:11px 25px;}
 	.post-share a{background-image: url("../images/color_theme/icons-share@2x.png"); background-size:112px 418px;}
 	.item-title .arrow{background-image: url("../images/color_theme/arrows@2x.png"); background-size:43px 96px;}

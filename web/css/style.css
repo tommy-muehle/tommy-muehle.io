@@ -273,10 +273,8 @@ a{cursor:pointer;}
     background-image:url(../images/color_theme/icons-social.png);
     background-repeat:no-repeat;} 
 
-.head-social li.tw a:hover{background-position:0px -72px; border-color:#54aee1;}
-.head-social li.github a:hover{background-position:-34px -72px; border-color:#54aee1;}
-.head-social li.lnkd a:hover{background-position:-68px -72px; border-color:#54aee1;}
-.head-social li.xing a:hover{background-position:-102px -72px; border-color:#54aee1;}
+.head-social li.github a:hover{border-color:#54aee1;}
+.head-social li.xing a:hover{border-color:#54aee1;}
 
 /* item */
 .item{padding:25px 0px; margin-bottom:3px; position:relative;}

@@ -57,6 +57,8 @@
         <echo>Set symlink to new release</echo>
         <sshexec port="${remote_port}" host="${remote_host}" keyfile="${remote_key}" passphrase="" username="${remote_user}"
                  command="ln -snf ${remote_path}/releases/${timestamp} ${remote_path}/current"/>
+        <sshexec port="${remote_port}" host="${remote_host}" keyfile="${remote_key}" passphrase="" username="${remote_user}"
+                 command="ln -snf ${remote_path}/app/cache ${remote_path}/current/app/cache"/>
 
         <echo>Update orm scheme</echo>
         <sshexec port="${remote_port}" host="${remote_host}" keyfile="${remote_key}" passphrase="" username="${remote_user}"

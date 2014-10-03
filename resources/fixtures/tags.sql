@@ -16,6 +16,9 @@ VALUES
 INSERT INTO `blog_post_to_tag` (`post_id`, `tag_id`)
 VALUES
 	(1, 2),
-	(1, 3);
+	(1, 3)
+	(2, 4),
+	(2, 6),
+	(2, 7);
 
 SET FOREIGN_KEY_CHECKS=1;

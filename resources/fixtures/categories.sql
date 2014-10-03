@@ -13,6 +13,8 @@ VALUES
 
 INSERT INTO `blog_post_to_category` (`post_id`, `category_id`)
 VALUES
-	(1, 3);
+	(1, 3),
+	(2, 2),
+	(2, 5);
 
 SET FOREIGN_KEY_CHECKS=1;

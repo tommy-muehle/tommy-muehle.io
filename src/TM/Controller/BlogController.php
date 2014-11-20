@@ -51,8 +51,12 @@ class BlogController extends BaseController implements ControllerProviderInterfa
             array('created' => 'desc')
         );
 
+        /* @var $latestPost Post */
+        $latestPost = $posts[0];
+
         $variables = array(
-            'posts' => $posts
+            'posts' => $posts,
+            'lastBuild' => $latestPost->getCreated()
         );
 
         return $this->render($app, 'blog/list.rss.twig', $variables);

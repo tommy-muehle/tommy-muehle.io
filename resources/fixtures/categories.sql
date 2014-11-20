@@ -9,12 +9,14 @@ VALUES
 	(2, 'PHP', 'php', 'PHP ist eine Skriptsprache, die hauptsächlich zur Erstellung dynamischer Webseiten oder Webanwendungen verwendet wird.'),
 	(3, 'Jenkins', 'jenkins', 'Jenkins ist ein erweiterbares, webbasiertes System zur kontinuierlichen Integration.'),
 	(4, 'Puppet', 'puppet', 'Puppet ist ein Werkzeug zur automatisierten Konfiguration von Systemen.'),
-	(5, 'Composer', 'composer', 'Composer ist ein Paketmanager für PHP-Applikationen.');
+	(5, 'Composer', 'composer', 'Composer ist ein Paketmanager für PHP-Applikationen.'),
+	(6, 'Shell', 'shell', 'Benutzerschnittstelle unter Unix oder unixoiden Computer-Betriebssystemen');
 
 INSERT INTO `blog_post_to_category` (`post_id`, `category_id`)
 VALUES
 	(1, 3),
 	(2, 2),
-	(2, 5);
+	(2, 5),
+	(3, 6);
 
 SET FOREIGN_KEY_CHECKS=1;

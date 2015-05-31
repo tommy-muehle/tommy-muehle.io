@@ -1,6 +1,6 @@
 <?php
 
-namespace TM\Provider;
+namespace TM\Website\Provider;
 
 use Silex\Application;
 use Silex\ServiceProviderInterface;
@@ -9,7 +9,7 @@ use Symfony\Component\Yaml\Yaml;
 /**
  * Class YamlConfigServiceProvider
  *
- * @package TM\Provider
+ * @package TM\Website\Provider
  */
 class YamlConfigServiceProvider implements ServiceProviderInterface
 {

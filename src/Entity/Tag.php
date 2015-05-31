@@ -1,11 +1,13 @@
 <?php
 
-namespace TM\Entity;
+namespace TM\Website\Entity;
 
 use Doctrine\ORM\Mapping\Table;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\Common\Collections\ArrayCollection;
+
+use TM\Website\Entity\Abstracts\Base;
 
 /**
  * Class Tag
@@ -13,7 +15,7 @@ use Doctrine\Common\Collections\ArrayCollection;
  * @Table(name="blog_tag")
  * @Entity(repositoryClass="TM\Entity\TagRepository")
  *
- * @package TM\Entity
+ * @package TM\Website\Entity
  */
 class Tag extends Base
 {

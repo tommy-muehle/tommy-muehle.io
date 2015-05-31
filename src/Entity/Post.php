@@ -1,6 +1,6 @@
 <?php
 
-namespace TM\Entity;
+namespace TM\Website\Entity;
 
 use Doctrine\ORM\Mapping\Table;
 use Doctrine\ORM\Mapping\Entity;
@@ -13,13 +13,15 @@ use Doctrine\ORM\Mapping\JoinColumn;
 use Doctrine\ORM\Mapping\JoinTable;
 use Doctrine\Common\Collections\ArrayCollection;
 
+use TM\Website\Entity\Abstracts\Base;
+
 /**
  * Class Post
  *
  * @Table(name="blog_post")
  * @Entity(repositoryClass="TM\Entity\PostRepository")
  *
- * @package TM\Entity
+ * @package TM\Website\Entity
  */
 class Post extends Base
 {
@@ -91,9 +93,6 @@ class Post extends Base
      */
     protected $urlTitle;
 
-    /**
-     *
-     */
     public function __construct()
     {
         $this->tags = new ArrayCollection();

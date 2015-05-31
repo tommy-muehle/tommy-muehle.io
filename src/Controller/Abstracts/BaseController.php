@@ -1,13 +1,13 @@
 <?php
 
-namespace TM\Controller;
+namespace TM\Website\Controller\Abstracts;
 
 use Silex\Application;
 
 /**
  * Class BaseController
  *
- * @package TM\Controller
+ * @package TM\Website\Controller
  */
 abstract class BaseController
 {
@@ -37,8 +37,7 @@ abstract class BaseController
     {
         /* @var $urlGenerator \Symfony\Component\Routing\Generator\UrlGenerator */
         $urlGenerator = $app['url_generator'];
-        $url          = $urlGenerator->generate($route, $parameters);
 
-        return $app->redirect($url);
+        return $app->redirect($urlGenerator->generate($route, $parameters));
     }
 } 

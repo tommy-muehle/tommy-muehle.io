@@ -1,18 +1,19 @@
 <?php
 
-namespace TM\Controller;
+namespace TM\Website\Controller;
 
 use Silex\Application;
 use Silex\ControllerCollection;
 use Silex\ControllerProviderInterface;
 
-use TM\Entity\Category;
-use TM\Entity\Post;
+use TM\Website\Entity\Category;
+use TM\Website\Entity\Post;
+use TM\Website\Controller\Abstracts\BaseController;
 
 /**
  * Class BlogController
  *
- * @package TM\Controller
+ * @package TM\Website\Controller
  */
 class BlogController extends BaseController implements ControllerProviderInterface
 {
@@ -28,8 +29,8 @@ class BlogController extends BaseController implements ControllerProviderInterfa
 
         $variables = array(
             'posts' => $em->getRepository('TM\Entity\Post')->findBy(
-                array('isPublished' => true),
-                array('created' => 'desc')
+                ['isPublished' => true],
+                ['created' => 'desc']
             )
         );
 

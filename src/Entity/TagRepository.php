@@ -1,13 +1,13 @@
 <?php
 
-namespace TM\Entity;
+namespace TM\Website\Entity;
 
 use Doctrine\ORM\EntityRepository;
 
 /**
  * Class TagRepository
  *
- * @package TM\Entity
+ * @package TM\Website\Entity
  */
 class TagRepository extends EntityRepository
 {

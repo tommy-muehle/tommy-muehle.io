@@ -1,6 +1,6 @@
 <?php
 
-namespace TM\Entity;
+namespace TM\Website\Entity\Abstracts;
 
 use Doctrine\ORM\Mapping\Id;
 use Doctrine\ORM\Mapping\Column;
@@ -12,7 +12,7 @@ use Doctrine\ORM\Mapping\MappedSuperclass;
  *
  * @MappedSuperclass
  *
- * @package TM\Entity
+ * @package TM\Website\Entity
  */
 abstract class Base
 {

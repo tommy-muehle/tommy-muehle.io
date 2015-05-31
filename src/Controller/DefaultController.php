@@ -1,15 +1,17 @@
 <?php
 
-namespace TM\Controller;
+namespace TM\Website\Controller;
 
 use Silex\Application;
 use Silex\ControllerCollection;
 use Silex\ControllerProviderInterface;
 
+use TM\Website\Controller\Abstracts\BaseController;
+
 /**
  * Class DefaultController
  *
- * @package TM\Controller
+ * @package TM\Website\Controller
  */
 class DefaultController extends BaseController implements ControllerProviderInterface
 {

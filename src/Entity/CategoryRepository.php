@@ -1,13 +1,13 @@
 <?php
 
-namespace TM\Entity;
+namespace TM\Website\Entity;
 
 use Doctrine\ORM\EntityRepository;
 
 /**
  * Class CategoryRepository
  *
- * @package TM\Entity
+ * @package TM\Website\Entity
  */
 class CategoryRepository extends EntityRepository
 {

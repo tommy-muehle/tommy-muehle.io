@@ -1,6 +1,6 @@
 <?php
 
-namespace TM\Entity;
+namespace TM\Website\Entity;
 
 use Doctrine\ORM\Mapping\Table;
 use Doctrine\ORM\Mapping\Entity;
@@ -10,13 +10,15 @@ use Doctrine\ORM\Mapping\JoinTable;
 use Doctrine\ORM\Mapping\JoinColumn;
 use Doctrine\Common\Collections\ArrayCollection;
 
+use TM\Website\Entity\Abstracts\Base;
+
 /**
  * Class Category
  *
  * @Table(name="blog_category")
  * @Entity(repositoryClass="TM\Entity\CategoryRepository")
  *
- * @package TM\Entity
+ * @package TM\Website\Entity
  */
 class Category extends Base
 {
@@ -95,7 +97,7 @@ class Category extends Base
     {
         $posts = new ArrayCollection();
 
-        /* @var $post \TM\Entity\Post */
+        /* @var $post \TM\Website\Entity\Post */
         foreach ($this->posts as $post) {
             if ($post->getIsPublished() === true) {
                 $posts->add($post);

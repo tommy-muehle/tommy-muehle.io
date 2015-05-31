@@ -1,31 +1,22 @@
 {
-    "require": {
-        "silex/silex": "1.2.1",
-        "swiftmailer/swiftmailer": "5.0.1",
-        "twig/twig": "1.15.1",
-        "symfony/twig-bridge": "2.5.3",
-        "symfony/form": "2.5.3",
-        "symfony/yaml": "2.5.3",
-        "doctrine/orm": "2.4.4",
-        "tm/silex-doctrine-orm-service-provider": "1.0.0"
-    },
-    "require-dev": {
-        "squizlabs/php_codesniffer": "1.*",
-        "phpunit/phpunit": "3.7.*",
-        "sebastian/phpcpd": "*"
-    },
-    "config": {
-        "bin-dir": "bin"
-    },
-    "autoload": {
-        "psr-0": {
-            "TM": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-0": {
-            "TM": "src/",
-            "TM\\Tests": "tests/"
-        }
+  "require": {
+    "silex/silex": "1.2.1",
+    "twig/twig": "1.15.1",
+    "symfony/twig-bridge": "2.5.3",
+    "symfony/yaml": "2.5.3",
+    "doctrine/orm": "2.4.4",
+    "tm/silex-doctrine-orm-service-provider": "1.0.0",
+    "tm/silex-sitemap-service-provider": "1.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.6.9"
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "autoload": {
+    "psr-4": {
+      "TM\\Website\\": "src//"
     }
+  }
 }

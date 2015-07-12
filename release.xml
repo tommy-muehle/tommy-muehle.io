@@ -1,0 +1,77 @@
+<project default="build" basedir="./">
+
+    <property name="buildNumber" value="2" />
+
+    <target name="build" depends="vendors, package" />
+
+    <target name="vendors">
+        <exec dir="${basedir}/website" executable="php" failonerror="true">
+            <arg value="composer.phar" />
+            <arg value="update" />
+            <arg value="--no-dev" />
+            <arg value="--optimize-autoloader" />
+        </exec>
+    </target>
+
+    <target name="package" description="Start fpm to build the DEB package.">
+        <exec executable="fpm">
+
+            <!-- target os -->
+            <arg value="--rpm-os"/>
+            <arg value="linux"/>
+
+            <!-- architecture (x86_64, noarch etc.) -->
+            <arg value="-a"/>
+            <arg value="all"/>
+
+            <!-- source -->
+            <arg value="-s"/>
+            <arg value="dir"/>
+
+            <!-- type of package -->
+            <arg value="-t"/>
+            <arg value="deb"/>
+
+            <!-- name of package -->
+            <arg value="-n"/>
+            <arg value="tommy-muehle_de"/>
+
+            <!-- force overwriting -->
+            <arg value="--force"/>
+
+            <!-- path on target-system -->
+            <arg value="--prefix=/var/www/tommy-muehle_de/releases/${buildNumber}"/>
+
+            <!-- excludes -->
+            <arg value="-x"/>
+            <arg value="**/.git*"/>
+            <arg value="-x"/>
+            <arg value=".git*"/>
+            <arg value="-x"/>
+            <arg value="**/logs/**"/>
+            <arg value="-x"/>
+            <arg value="**/bin/**"/>
+            <arg value="-x"/>
+            <arg value="**/cache/**"/>
+
+            <!-- version -->
+            <arg value="--version"/>
+            <arg value="1.1"/> <!-- Project version -->
+
+            <!-- package build path -->
+            <arg value="-p"/>
+            <arg value="${basedir}/build/"/>
+
+            <!-- user things -->
+            <arg value="--rpm-user"/>
+            <arg value="root"/>
+            <arg value="--rpm-group"/>
+            <arg value="root"/>
+
+            <!-- Path to the source-files
+                 This path are combined with prefix (see above).
+             -->
+            <arg value="website"/>
+        </exec>
+    </target>
+</project>

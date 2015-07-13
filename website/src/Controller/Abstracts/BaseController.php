@@ -18,7 +18,7 @@ abstract class BaseController
      *
      * @return string
      */
-    protected function render(Application $app, $template, array $variables = array())
+    protected function render(Application $app, $template, array $variables = [])
     {
         /* @var $twig \Twig_Environment */
         $twig = $app['twig'];
@@ -33,7 +33,7 @@ abstract class BaseController
      *
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
-    protected function redirect(Application $app, $route, array $parameters = array())
+    protected function redirect(Application $app, $route, array $parameters = [])
     {
         /* @var $urlGenerator \Symfony\Component\Routing\Generator\UrlGenerator */
         $urlGenerator = $app['url_generator'];

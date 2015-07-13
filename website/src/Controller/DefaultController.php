@@ -57,9 +57,9 @@ class DefaultController extends BaseController implements ControllerProviderInte
         $defaultController = $app['controllers_factory'];
 
         /* @var $defaultController \Silex\ControllerCollection */
-        $defaultController->match('/', array($this, 'indexAction'))->bind('default.index');
-        $defaultController->match('/impressum', array($this, 'imprintAction'))->bind('default.imprint');
-        $defaultController->match('/404', array($this, 'notFoundAction'))->bind('default.notFound');
+        $defaultController->match('/', [$this, 'indexAction'])->bind('default.index');
+        $defaultController->match('/impressum', [$this, 'imprintAction'])->bind('default.imprint');
+        $defaultController->match('/404', [$this, 'notFoundAction'])->bind('default.notFound');
 
         return $defaultController;
     }

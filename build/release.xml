@@ -1,6 +1,8 @@
-<project default="build" basedir="./">
+<project default="build" basedir="../">
 
-    <property name="buildNumber" value="2" />
+    <tstamp>
+        <format property="date" pattern="Y-m-d-HH_mm_ss"/>
+    </tstamp>
 
     <target name="build" depends="vendors, package" />
 
@@ -40,7 +42,7 @@
             <arg value="--force"/>
 
             <!-- path on target-system -->
-            <arg value="--prefix=/var/www/tommy-muehle_de/releases/${buildNumber}"/>
+            <arg value="--prefix=/var/www/tommy-muehle_de/releases/${date}"/>
 
             <!-- excludes -->
             <arg value="-x"/>
@@ -63,10 +65,23 @@
             <arg value="${basedir}/build/"/>
 
             <!-- user things -->
-            <arg value="--rpm-user"/>
-            <arg value="root"/>
-            <arg value="--rpm-group"/>
-            <arg value="root"/>
+            <arg value="--deb-user"/>
+            <arg value="web"/>
+            <arg value="--deb-group"/>
+            <arg value="www-data"/>
+
+            <!-- depends -->
+            <arg value="-d"/>
+            <arg value="php5"/>
+
+            <!-- script for doing some tasks on target machine -->
+            <arg value="--after-install"/>
+            <arg value="${basedir}/build/after-install.sh"/>
+
+            <!-- share variables to scripts like after_install -->
+            <arg value="--template-scripts"/>
+            <arg value="--template-value"/>
+            <arg value="release=${date}"/>
 
             <!-- Path to the source-files
                  This path are combined with prefix (see above).

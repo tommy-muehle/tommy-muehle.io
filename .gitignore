@@ -1,9 +1,8 @@
 atlassian-ide-plugin.xml
-website/composer.lock
-website/web/cache/
+app/composer.lock
 .idea/
-website/app/logs/
-website/app/cache/
-build/*.deb
-website/bin/
-website/vendor/
+app/app/logs/
+app/app/cache/
+app/bin/
+app/vendor/
+nginx/certs/

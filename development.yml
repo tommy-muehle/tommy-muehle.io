@@ -1,0 +1,6 @@
+app:
+  extends:
+      file: common.yml
+      service: app
+  volumes:
+    - "./app:/app"

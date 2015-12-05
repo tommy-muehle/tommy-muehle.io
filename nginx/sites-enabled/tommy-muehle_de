@@ -1,9 +1,9 @@
 server {
-  listen   443;
+  listen 443 ssl http2;
 
-  ssl    on;
-  ssl_certificate    /etc/nginx/certs/tommy-muehle_de.crt;
-  ssl_certificate_key    /etc/nginx/certs/tommy-muehle_de.key;
+  ssl on;
+  ssl_certificate /etc/nginx/certs/tommy-muehle_de.crt;
+  ssl_certificate_key /etc/nginx/certs/tommy-muehle_de.key;
 
   server_name tommy-muehle.de;
   charset utf-8;
@@ -22,5 +22,7 @@ server {
   server_name tommy-muehle.de;
   charset utf-8;
 
-  rewrite ^(.*) https://$host$1 permanent;
- }
+  location / {
+    return 301 https://$host$request_uri;
+  }
+}

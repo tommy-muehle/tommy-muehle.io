@@ -1,8 +1,7 @@
-atlassian-ide-plugin.xml
 app/composer.lock
 .idea/
-app/app/logs/
-app/app/cache/
 app/bin/
+app/cache/
 app/vendor/
 nginx/certs/
+!nginx/certs/.gitkeep

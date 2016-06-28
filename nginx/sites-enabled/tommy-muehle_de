@@ -2,8 +2,9 @@ server {
   listen 443 ssl http2;
 
   ssl on;
-  ssl_certificate /etc/nginx/certs/tommy-muehle_de.crt;
+  ssl_certificate /etc/nginx/certs/tommy-muehle_de.bundle;
   ssl_certificate_key /etc/nginx/certs/tommy-muehle_de.key;
+  ssl_session_cache shared:SSL:10m;
 
   server_name tommy-muehle.de;
   charset utf-8;
@@ -14,6 +15,8 @@ server {
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
   }
+
+  server_tokens off;
 }
 
 server {
@@ -25,4 +28,6 @@ server {
   location / {
     return 301 https://$host$request_uri;
   }
+
+  server_tokens off;
 }

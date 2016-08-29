@@ -28,9 +28,9 @@ fieldset, form, label, legend,
 
 table, caption, tbody, tfoot, thead, tr, th, td,
 
-article, aside, canvas, details, embed, 
+article, aside, canvas, details, embed,
 
-figure, figcaption, footer, header, hgroup, 
+figure, figcaption, footer, header, hgroup,
 
 menu, nav, output, ruby, section, summary,
 
@@ -52,7 +52,7 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 
 footer, header, hgroup, menu, nav, section {
 
@@ -124,7 +124,7 @@ a{cursor:pointer;}
 
 /* helper classes */
 
-.clearfix:before, 
+.clearfix:before,
 
 .clearfix:after { content: ""; display: table; }
 
@@ -193,7 +193,7 @@ a{cursor:pointer;}
 
 	font:700 11px/32px 'Open Sans', sans-serif;
 
-	text-decoration:none;   
+	text-decoration:none;
 
 	display:inline-block;
 
@@ -223,13 +223,13 @@ a{cursor:pointer;}
 
 	margin-top:-2px;}
 
-	
+
 
 #up{background:url(../images/up.png) no-repeat; width:40px; height:40px; position:absolute; bottom:0px; right:-50px;}
 
 #up:hover{background-position:0px -42px;}
 
-	
+
 
 /* icons */
 
@@ -264,14 +264,14 @@ a{cursor:pointer;}
 .head-social ul li{float:left; width:34px; height:34px;}
 
 .head-social a{
-    display:block; 
-    width:100%; 
-    height:32px; 
-    text-indent: 100%; 
-    white-space: nowrap; 
-    overflow:hidden; 
+    display:block;
+    width:100%;
+    height:32px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow:hidden;
     background-image:url(../images/color_theme/icons-social.png);
-    background-repeat:no-repeat;} 
+    background-repeat:no-repeat;}
 
 .head-social li.github a:hover{border-color:#54aee1;}
 .head-social li.xing a:hover{border-color:#54aee1;}
@@ -283,18 +283,18 @@ a{cursor:pointer;}
 
 	height:43px;
 
-	margin-left:3px; 
+	margin-left:3px;
 
-	display:inline-block; 
+	display:inline-block;
 
-	position:relative; 
+	position:relative;
 
 	margin-bottom:3px;
 
 	cursor:pointer;
 
 	padding-right:40px;
-	
+
 	z-index:2;}
 
 .item-title .title{
@@ -305,7 +305,7 @@ a{cursor:pointer;}
 
 	font-size:16px; line-height:16px; font-family:'Patua One', cursive;
 
-	background:#e7f2f9; 
+	background:#e7f2f9;
 
 	padding:13px 17px 14px 13px;
 
@@ -315,24 +315,24 @@ a{cursor:pointer;}
 
 .item-title [class^="icon-"]{
 
-	position:absolute; 
+	position:absolute;
 
-	height:43px; 
+	height:43px;
 
-	width:43px; 
+	width:43px;
 
 	top:0px;
 
 	left:-46px;
 
-	background-position:center center; 
+	background-position:center center;
 
 	background-repeat:no-repeat;}
 
 .item-title .arrow{
 
 	background-image: url(../images/color_theme/arrows.png);
-	
+
 	background-repeat: no-repeat;
 
 	width:21px;
@@ -431,9 +431,9 @@ a{cursor:pointer;}
 
 	background:url("../images/icon-plus.png") no-repeat scroll 8px 7px;
 
-	width:27px; 
+	width:27px;
 
-	height:27px; 
+	height:27px;
 
 	display:inline-block;
 
@@ -462,8 +462,8 @@ a{cursor:pointer;}
 .skill-box h3{
 
 	background-image:url(../images/color_theme/icons-plus.png);
-	
-	background-repeat:no-repeat; 
+
+	background-repeat:no-repeat;
 
 	font:13px/23px 'Montserrat', sans-serif;
 
@@ -498,9 +498,9 @@ a{cursor:pointer;}
 .skill-language .skill-title span{float:left;}
 
 .skill-language .skill-data{
-	float:right; 
-	margin-top:1px; 
-	margin-right:2px; 
+	float:right;
+	margin-top:1px;
+	margin-right:2px;
 	background-repeat:no-repeat;
 	background-color:transparent;}
 
@@ -542,7 +542,7 @@ a{cursor:pointer;}
 
 
 
-.fancy-wrap{width:100%; max-width:790px; display:none;}	
+.fancy-wrap{width:100%; max-width:790px; display:none;}
 
 .fancy-wrap img{max-width:100%;}
 
@@ -552,7 +552,7 @@ a{cursor:pointer;}
 
 .fancy p{font:600 13px/21px 'Open Sans'; color:#4f4f4f;}
 
-.fancybox-fs{ 
+.fancybox-fs{
 
     background:url(../images/close.png) no-repeat 0 0;
 
@@ -574,7 +574,7 @@ a{cursor:pointer;}
 
 .fancybox-close{display:none !important;}
 
-	
+
 
 /* contact */
 
@@ -588,6 +588,7 @@ a{cursor:pointer;}
 
 #contact .form-btn{padding:2px 0px; margin-top:20px;}
 
+#cards h3,
 #contact h3,
 #imprint h3,
 
@@ -635,11 +636,11 @@ textarea.form-item{height:71px; resize:none; width:490px;}
 
 .contact-info{padding-top:5px;}
 .contact-info li{margin-bottom:7px;}
-.contact-info .icon{ 
+.contact-info .icon{
 	background-image:url(../images/color_theme/icons-contact.png);
 	background-repeat:no-repeat;
-	display:block; 
-	float:left; 
+	display:block;
+	float:left;
 	width:22px;
 	height:22px;
 	border:2px solid #d0dde5;
@@ -652,16 +653,16 @@ textarea.form-item{height:71px; resize:none; width:490px;}
 
 	font:400 13px/13px 'Open Sans', sans-serif;
 
-	display:inline-block; 
+	display:inline-block;
 
-	color:#7c7c7c; 
+	color:#7c7c7c;
 
 	padding:8px 0px;
 
 	letter-spacing:-1px;
-	
+
 	display:block;
-	
+
 	float:left;}
 
 .contact-info  strong{font-weight:700;}
@@ -687,18 +688,18 @@ textarea.form-item{height:71px; resize:none; width:490px;}
 	display:block;
 
     text-decoration: none;
-	
+
 	width:250px;
-	
+
 	height:43px;
-	
+
 	overflow:hidden;}
 
 .blog-link .icon{
 
 	background:url(../images/feather.png) center center no-repeat #434b51;
 
-	width:43px; 
+	width:43px;
 
 	height:43px;
 
@@ -710,9 +711,9 @@ textarea.form-item{height:71px; resize:none; width:490px;}
 
 .blog-link .label{
 	display: block;
-	
+
 	color:#fff;
-	
+
 	top:0px;
 
 	left:43px;
@@ -752,15 +753,15 @@ textarea.form-item{height:71px; resize:none; width:490px;}
 
     margin:0;
 
-    display:block; 
+    display:block;
 
-    color:#999999; 
+    color:#999999;
 
     padding-left:15px;
 
-    border-top:2px solid #ebebeb; 
+    border-top:2px solid #ebebeb;
 
-    font:400 12px/23px 'Open Sans', sans-serif; 
+    font:400 12px/23px 'Open Sans', sans-serif;
 
     background:url(../images/color_theme/icon-comments.png) no-repeat 9px 7px;
 
@@ -782,7 +783,7 @@ textarea.form-item{height:71px; resize:none; width:490px;}
 
 .slidesjs-pagination .active {color:red;}
 
-.slidesjs-next, 
+.slidesjs-next,
 
 .slidesjs-previous{position:absolute; top:43%; z-index:10; width:36px; height:36px; text-indent:-9999px;}
 
@@ -828,23 +829,23 @@ textarea.form-item{height:71px; resize:none; width:490px;}
 
 .tagcloud a, .post-tags a{
 
-    display:inline-block;  
+    display:inline-block;
 
-    font:600 11px/22px 'Open Sans', sans-serif; 
+    font:600 11px/22px 'Open Sans', sans-serif;
 
-    vertical-align:middle; 
+    vertical-align:middle;
 
-    text-decoration:none; 
+    text-decoration:none;
 
-    padding:0px 10px; 
+    padding:0px 10px;
 
-    margin-right:2px; 
+    margin-right:2px;
 
     text-transform:uppercase;
 
-    -webkit-border-radius:2px; 
+    -webkit-border-radius:2px;
 
-       -moz-border-radius:2px; 
+       -moz-border-radius:2px;
 
             border-radius:2px;
 
@@ -866,17 +867,17 @@ textarea.form-item{height:71px; resize:none; width:490px;}
 
 .post-share span{margin-right:8px; float:left; line-height:25px;}
 
-.post-share a{ 
+.post-share a{
 	float:left;
-	text-decoration:none; 
-	width:22px; 
-	height:22px; 
+	text-decoration:none;
+	width:22px;
+	height:22px;
 	margin-left:3px;
 	border-color: #d0dde5;
     	border-style: solid;
 	border-width:2px;
 	background-image:url(../images/color_theme/icons-share.png);
-	background-repeat:no-repeat; 
+	background-repeat:no-repeat;
 	vertical-align:middle;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
@@ -959,8 +960,8 @@ textarea.form-item{height:71px; resize:none; width:490px;}
 
 .btn-reply:active,
 .btn-reply:hover,
-.comment-reply-link:active, 
-.comment-reply-link:hover,  
+.comment-reply-link:active,
+.comment-reply-link:hover,
 #cancel-comment-reply-link:hover{background-color:#434b51;}
 
 
@@ -1000,9 +1001,9 @@ textarea.form-item{height:71px; resize:none; width:490px;}
 
 /* wp content */
 
-.wp-cont h1, .wp-cont h2, 
+.wp-cont h1, .wp-cont h2,
 
-.wp-cont h3, .wp-cont h4, 
+.wp-cont h3, .wp-cont h4,
 
 .wp-cont h5, .wp-cont h6{font-family:"Open Sans"; font-weight:600; color:#000; margin-bottom:15px;}
 
@@ -1028,27 +1029,27 @@ textarea.form-item{height:71px; resize:none; width:490px;}
 
 #main_skin a, #logo_color a{
 
-    display:inline-block; 
+    display:inline-block;
 
-    border:2px solid #d0dde5; 
+    border:2px solid #d0dde5;
 
-    color:#8C9DA8; 
+    color:#8C9DA8;
 
-    font:600 11px/22px 'Open Sans', sans-serif; 
+    font:600 11px/22px 'Open Sans', sans-serif;
 
-    vertical-align:middle;  
+    vertical-align:middle;
 
-    text-decoration:none; 
+    text-decoration:none;
 
-    padding:0px 10px; 
+    padding:0px 10px;
 
-    margin-right:2px; 
+    margin-right:2px;
 
     text-transform:uppercase;
 
-    -webkit-border-radius:2px; 
+    -webkit-border-radius:2px;
 
-       -moz-border-radius:2px; 
+       -moz-border-radius:2px;
 
             border-radius:2px;
 
@@ -1062,7 +1063,7 @@ textarea.form-item{height:71px; resize:none; width:490px;}
 
             transition:all 0.4s ease 0s;}
 
-#logo_color a{padding:0px 5px;}  
+#logo_color a{padding:0px 5px;}
 
 #main_skin a:hover, #logo_color a:hover{border-color:#a8b3ba; color:#7b8a94;}
 
@@ -1148,7 +1149,7 @@ textarea.form-item{height:71px; resize:none; width:490px;}
 
     width: 100%;
 
-    z-index: 10; 
+    z-index: 10;
 
     position: absolute;
 
@@ -1170,7 +1171,7 @@ textarea.form-item{height:71px; resize:none; width:490px;}
 
     position:absolute;
 
-    width:100%;}    
+    width:100%;}
 
 .ptf-button span{
 

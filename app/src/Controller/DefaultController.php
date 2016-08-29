@@ -46,6 +46,16 @@ class DefaultController extends BaseController implements ControllerProviderInte
     }
 
     /**
+     * @param Application $app
+     *
+     * @return string
+     */
+    public function postcardsAction(Application $app)
+    {
+        return $this->render($app, 'default/postcards.html.twig');
+    }
+
+    /**
      * Returns routes to connect to the given application.
      *
      * @param Application $app An Application instance
@@ -58,8 +68,9 @@ class DefaultController extends BaseController implements ControllerProviderInte
 
         /* @var $defaultController \Silex\ControllerCollection */
         $defaultController->match('/', [$this, 'indexAction'])->bind('default.index');
-        $defaultController->match('/impressum', [$this, 'imprintAction'])->bind('default.imprint');
+        $defaultController->match('/imprint', [$this, 'imprintAction'])->bind('default.imprint');
         $defaultController->match('/404', [$this, 'notFoundAction'])->bind('default.notFound');
+        $defaultController->match('/postcards', [$this, 'postcardsAction'])->bind('default.postcards');
 
         return $defaultController;
     }

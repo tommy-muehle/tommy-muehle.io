@@ -20,6 +20,19 @@ server {
 }
 
 server {
+  listen 443 ssl http2;
+
+  server_name .tommy-muehle.de;
+  charset utf-8;
+
+  location / {
+    return 301 https://tommy-muehle.io$request_uri;
+  }
+
+  server_tokens off;
+}
+
+server {
   listen 80;
 
   server_name .tommy-muehle.io .tommy-muehle.de;

@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://tommy-muehle.de/sitemap.xml
